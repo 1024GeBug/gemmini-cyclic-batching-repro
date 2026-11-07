@@ -1,0 +1,51 @@
+{
+  "baseline": {
+    "historical_origin": "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/base_source",
+    "files": {
+      "driver.cpp": "4d86d143dc555575e78e005c8e739488a64255631f111ab64ec6d4eb628355d5",
+      "driver_main.hpp": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586",
+      "engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+      "engine/verilated_engine.cpp": "2302eb94fed47de3df1ba1e9d55e25d3bfbdd6fcc72d3fe883c4988733576b40",
+      "engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+      "online_main.cpp": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+    },
+    "same_bytes_as_companion": "repro_v6/runtimes/online/source (six files)",
+    "execution_scope": "original 32-query ON comparator; original engine without added SRAM observer"
+  },
+  "baseline_observed": {
+    "historical_origin": "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/baseline/source",
+    "files": {
+      "driver.cpp": "4d86d143dc555575e78e005c8e739488a64255631f111ab64ec6d4eb628355d5",
+      "driver_main.hpp": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586",
+      "engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+      "engine/verilated_engine.cpp": "81deb1e74f7b55ac2777337d780ea01dd871387da04f5d095ece40c35bd0a97c",
+      "engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+      "online_main.cpp": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+    },
+    "execution_scope": "new 4-query baseline; SRAM observer added; result.json exactly equals original tiny baseline"
+  },
+  "high_restore": {
+    "historical_origin": "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/diagnostic32_v1/high_a2_restore/source",
+    "files": {
+      "driver.cpp": "a748277cbbdf3784ba2d4e8f1a48721089b5b0a9b58a70723f1888c81cfdaa4a",
+      "driver_main.hpp": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586",
+      "engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+      "engine/verilated_engine.cpp": "81deb1e74f7b55ac2777337d780ea01dd871387da04f5d095ece40c35bd0a97c",
+      "engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+      "online_main.cpp": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+    },
+    "execution_scope": "32-query high A2, real restores retained, same added SRAM observer as retain"
+  },
+  "high_retain": {
+    "historical_origin": "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/diagnostic32_v1/high_a2_retain/source",
+    "files": {
+      "driver.cpp": "ca7435f919b682670293057c249f6a48d168689271a14c5352798b299991f0fd",
+      "driver_main.hpp": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586",
+      "engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+      "engine/verilated_engine.cpp": "81deb1e74f7b55ac2777337d780ea01dd871387da04f5d095ece40c35bd0a97c",
+      "engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+      "online_main.cpp": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+    },
+    "execution_scope": "4- and 32-query high A2, real restores removed; configuration-only resume"
+  }
+}

@@ -1,0 +1,2 @@
+CPU_FREE cpu_instantiated=false translation=bare_address_pmp_allow memory_latency=2
+ONLINE_DRAINED policy=on cycles=212726

@@ -1,0 +1,30 @@
+{
+  "gemmini_sha": "8c3f9923a44a2fe2c7930587be297d6d4f8c09ca",
+  "gemmini_rocc_tests_sha": "7c540b3adf1b86ad93d07f893abe3a73489b568e",
+  "files": [
+    {
+      "path": "include/gemmini.h",
+      "url": "https://raw.githubusercontent.com/ucb-bar/gemmini-rocc-tests/7c540b3adf1b86ad93d07f893abe3a73489b568e/include/gemmini.h",
+      "sha256": "18801f4eab0cd2e81e25a6c2aa97c7ed644b693e8d2c24cdeb41ab3a7208336d",
+      "bytes": 145386
+    },
+    {
+      "path": "include/gemmini_params.h",
+      "url": "https://raw.githubusercontent.com/ucb-bar/gemmini-rocc-tests/7c540b3adf1b86ad93d07f893abe3a73489b568e/include/gemmini_params.h",
+      "sha256": "3758ae967af3a179497660970201093a7fb624be00173990ce33d3f5c38da924",
+      "bytes": 2714
+    },
+    {
+      "path": "include/gemmini_counter.h",
+      "url": "https://raw.githubusercontent.com/ucb-bar/gemmini-rocc-tests/7c540b3adf1b86ad93d07f893abe3a73489b568e/include/gemmini_counter.h",
+      "sha256": "5826242287784b9a383d45fdcb6791f8a1651d9d320a1a5f011585a9885b5669",
+      "bytes": 1995
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/ucb-bar/gemmini-rocc-tests/7c540b3adf1b86ad93d07f893abe3a73489b568e/LICENSE",
+      "sha256": "c3b204bde93ad5054b0797fdbbb23a36e68d25672dc2d5ed39c3f69299457fac",
+      "bytes": 1339
+    }
+  ]
+}

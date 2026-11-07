@@ -1,0 +1,426 @@
+{
+  "schema": 1,
+  "created_unix": 1793773214.7706716,
+  "scope": "read-only completed-run comparison; no RTL execution",
+  "source_files": {
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/compare_ten_v6.py": {
+      "bytes": 15232,
+      "sha256": "372541f23be131202f30146c96bd61c2eba4c6e45d015d1e6df6fb61fc497208"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/preregistration.json": {
+      "bytes": 6550,
+      "sha256": "d64613b94997cb516ade3d6cc60246af016de02023dfa57f79e53e7398d26c68"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/execution_summary.json": {
+      "bytes": 482,
+      "sha256": "c6cbf736129f0f08d393d70e75262815699815b9e7780d79b13a78b426868858"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/build_manifest.json": {
+      "bytes": 23349,
+      "sha256": "832891d7b6ab6914ecbafe7d9d4c7a4b8231f82e4078c635464f07365e22a617"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/meta.json": {
+      "bytes": 221,
+      "sha256": "6931160cfd2be23f285e1843c72bc33a28753339ab433503467cc859faf8084d"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/compiled_source/driver.cpp": {
+      "bytes": 31852,
+      "sha256": "4d86d143dc555575e78e005c8e739488a64255631f111ab64ec6d4eb628355d5"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/compiled_source/driver_main.hpp": {
+      "bytes": 991,
+      "sha256": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/compiled_source/engine/common_api.hpp": {
+      "bytes": 7542,
+      "sha256": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/compiled_source/engine/verilated_engine.cpp": {
+      "bytes": 32848,
+      "sha256": "2302eb94fed47de3df1ba1e9d55e25d3bfbdd6fcc72d3fe883c4988733576b40"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/compiled_source/engine/verilated_engine.hpp": {
+      "bytes": 303,
+      "sha256": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/compiled_source/online_main.cpp": {
+      "bytes": 4020,
+      "sha256": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/audit_source/check_v2.py": {
+      "bytes": 53420,
+      "sha256": "84f209d4de4214abb087aa086fcf9a779e9fd278bce64a47ace428e642e85be9"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/audit_source/audit_source.py": {
+      "bytes": 1454,
+      "sha256": "7b244a983d045e665f293699b8d288d1f61daf3b4aa6a53cd41879c336078348"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/audit_source/diagnostic_input_reference.py": {
+      "bytes": 15087,
+      "sha256": "93266898a2017b12c94fa2e32f01b09122ba311c10c6332273eb1866d976871c"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/audit_source/exercise_v2_wire.py": {
+      "bytes": 423,
+      "sha256": "9d734738b57adc52f3d995e489788713f7affb724c34fd891a8d9cb69d294377"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/audit_source/online_audit.py": {
+      "bytes": 11588,
+      "sha256": "783cb620f7abc88b099155c71179bc352a5e2e5649edba0a4f7047682fd24160"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/audit_source/quantization_reference.py": {
+      "bytes": 1917,
+      "sha256": "a98e573960962277d06505eea7e9bb2e3ab31ad12a1ffc36abd14ff2fa7caf31"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/audit_source/raw_tl.py": {
+      "bytes": 12280,
+      "sha256": "dedb3b92296a5704ee7fcd5ca8e7d0fdfc530d1baeeb9972a028d231840b480f"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/audit_source/response_rules.py": {
+      "bytes": 3363,
+      "sha256": "09909ed45d1ac55187e865ea1b7e59038c1c17431edd45ae47870d86904207f9"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/audit_source/test_v2_guards.py": {
+      "bytes": 2597,
+      "sha256": "27eb3eb79592dd152ffd7c9a83b9a677ce9547a8a0be155b7bc7df11840c1ec7"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/audit_source/test_v2_online_faults.py": {
+      "bytes": 4563,
+      "sha256": "ac7c4616f57f0f3594075a795079789dc2166f63994b53c29f1d25f9ce6ce650"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/on/audit.json": {
+      "bytes": 10518,
+      "sha256": "2f5975daa30919324b15a7c7e4ff6384265558d5db54d331829df071d8b1be26"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/on/query_results.json": {
+      "bytes": 5594,
+      "sha256": "bd58148310f1aadd62816391ea8862118d1f0ae47a1c1d06668a6043c7848107"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/on/result.json": {
+      "bytes": 1555,
+      "sha256": "e721602832ebb385adb75558923c66b998546fd8be8a8e88a7e2a56006412f68"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/on/runtime_config.json": {
+      "bytes": 430,
+      "sha256": "070d958d107089598a27defc91642f932a8f9c865544f78e5cb34539cac84f3b"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/on/driver_events.jsonl": {
+      "bytes": 4354217,
+      "sha256": "3c3ce40ac4061e35f72490455a6378c9b102140ae2cc469b4295d04c2182da95"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/off/audit.json": {
+      "bytes": 10519,
+      "sha256": "8a4e99540e30ba7ac50d511a6b39de84128a34515a340eb7a610a6958ec2bcff"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/off/query_results.json": {
+      "bytes": 5594,
+      "sha256": "48d316f3d35394c35fdb5a7a25c174bb837bf0bef585407e1fabbeee8706b125"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/off/result.json": {
+      "bytes": 1554,
+      "sha256": "5d075a62b77f788027ec261ac89d8ad2ca596b70b3582b1db73cda5b472a5b91"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/off/runtime_config.json": {
+      "bytes": 431,
+      "sha256": "262e2ff508c2f10aa7864b24c219a7197e25e24a632334d5e5bdcff119a8e41e"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/off/driver_events.jsonl": {
+      "bytes": 4047913,
+      "sha256": "b5fa886d7dfeaac67e27d80b3d585014424dc9f5648dc627d10ecf25c1156266"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j4_immediate/audit.json": {
+      "bytes": 10519,
+      "sha256": "9d740ca4f625ba9505ace12a74e23ba49d63a9f9fbd5a22f3a3258cdec383075"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j4_immediate/query_results.json": {
+      "bytes": 5594,
+      "sha256": "b43a8feb8bc4fc4f5e8d3b3f5297d5146cf977ce9296f1a4ab728808b1df5a8b"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j4_immediate/result.json": {
+      "bytes": 1554,
+      "sha256": "4b7f6af8ce96937203012effb6eb2b6e9dd2351a45942789fcb70e2b8c61ccd7"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j4_immediate/runtime_config.json": {
+      "bytes": 434,
+      "sha256": "256e4f5c7565ab9209822ebfbe3b1f99019d6d2f8a3a6d4b51756a5fa4568d50"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j4_immediate/driver_events.jsonl": {
+      "bytes": 3826226,
+      "sha256": "faa136893aee7735b849a467b2369d62a5c947c0b7a238e1c3651aaee43ac3ae"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j8_immediate/audit.json": {
+      "bytes": 10522,
+      "sha256": "5979ae9e588bd46d67ac194e86c047b3d0b3241e007a9ff70d8007fe5a0f9ab3"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j8_immediate/query_results.json": {
+      "bytes": 5599,
+      "sha256": "dbd2e91b60b664d4870f78b1d2d54916beb94381e57deb1cbeccd72f157bd1d0"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j8_immediate/result.json": {
+      "bytes": 1551,
+      "sha256": "11d22c70a192ded9096f7ef653ccc2834d54d8fb05d323e534ccac2bf26c3eed"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j8_immediate/runtime_config.json": {
+      "bytes": 434,
+      "sha256": "0e252184c4789d62c54ae0e9e49a205517992933cfa8f6f3063a14fee25899a6"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j8_immediate/driver_events.jsonl": {
+      "bytes": 3155693,
+      "sha256": "4f6976b17bdf1fb6ec5e41a57991f7d5090a070ac007e91094245d0e4f46f2bb"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j4_threshold3/audit.json": {
+      "bytes": 10532,
+      "sha256": "65fd05aa30ee6b8ab9f19399f24775011e69b98c4661e361ce5e4e1be02b5b35"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j4_threshold3/query_results.json": {
+      "bytes": 5609,
+      "sha256": "7a53ec566927ae84f43608ded89d6b03cc22cd49d5b140d6ae19a423d7516fa7"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j4_threshold3/result.json": {
+      "bytes": 1551,
+      "sha256": "33f501abb59aa149345944e8d6fdecf1139f5e337c4fda313dc97cd0c7701d72"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j4_threshold3/runtime_config.json": {
+      "bytes": 438,
+      "sha256": "bd8f6d5e5ba768433aee4065b374a82d3d41aac989e405a41c9e6076fc0da1ab"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j4_threshold3/driver_events.jsonl": {
+      "bytes": 5292389,
+      "sha256": "c07021c60d759c7415f2f80d97723a052d842e8778e9821c8788c2c771c772f5"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j8_threshold3/audit.json": {
+      "bytes": 10532,
+      "sha256": "94592bd7527adf11a269491faf0d668daae54d74ec3a7c22840a69f0e4b734e2"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j8_threshold3/query_results.json": {
+      "bytes": 5609,
+      "sha256": "fd727e62a4a6ed60196edabb8cdf974b17966d9b987456feeed7fbe6239634c9"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j8_threshold3/result.json": {
+      "bytes": 1551,
+      "sha256": "ef048b26ade33edfe103274a0d44d373917373ac0f542147f4c822e799944067"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j8_threshold3/runtime_config.json": {
+      "bytes": 438,
+      "sha256": "3162f010606a0f7f69d2020bc2f1c3082a5155b13b5eb857430af395653b9e5d"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/closed_j8_threshold3/driver_events.jsonl": {
+      "bytes": 4229798,
+      "sha256": "d7815830f0bfc154e76d25afb8d9396e2c770786b49f1997149704ef4bcfeac0"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/preregistration.json": {
+      "bytes": 14459,
+      "sha256": "fab4a42594d8c49a445bfffba2f3cc5a525edfe4c0016f4dcec2e4cae65e5904"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/execution_summary.json": {
+      "bytes": 12766,
+      "sha256": "48ff676c89f004a4e01fe2edc0233aadc9a4bc496ed4e39861a702abf2243d79"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/build_manifest.json": {
+      "bytes": 23292,
+      "sha256": "7d4ff58336202c7052127e79620b13d8ff6bd20fa426c30295489eb58a1742a1"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/meta.json": {
+      "bytes": 221,
+      "sha256": "6931160cfd2be23f285e1843c72bc33a28753339ab433503467cc859faf8084d"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/compiled_source/driver.cpp": {
+      "bytes": 32043,
+      "sha256": "b8ef311fb1a4405ed817e662bdf7e271872245e84ea9df706e519407b97d9cd7"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/compiled_source/driver_main.hpp": {
+      "bytes": 1021,
+      "sha256": "bc7d7c786552ce7e83fe83be60a637df6f45e67cfcfb69954c88811541c40ff5"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/compiled_source/engine/common_api.hpp": {
+      "bytes": 7542,
+      "sha256": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/compiled_source/engine/verilated_engine.cpp": {
+      "bytes": 32848,
+      "sha256": "2302eb94fed47de3df1ba1e9d55e25d3bfbdd6fcc72d3fe883c4988733576b40"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/compiled_source/engine/verilated_engine.hpp": {
+      "bytes": 303,
+      "sha256": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/compiled_source/online_main.cpp": {
+      "bytes": 4127,
+      "sha256": "a05b7368ea305ccc864940ecfc36795964bb8393e69f1a560d86c73be478c7e1"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/audit_source/check_v2.py": {
+      "bytes": 60851,
+      "sha256": "45edaa400d724520fb7d1ed51c3fbad2792daa7404444ef3adcf61ea11eaaab7"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/audit_source/audit_source.py": {
+      "bytes": 1454,
+      "sha256": "7b244a983d045e665f293699b8d288d1f61daf3b4aa6a53cd41879c336078348"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/audit_source/diagnostic_input_reference.py": {
+      "bytes": 15087,
+      "sha256": "93266898a2017b12c94fa2e32f01b09122ba311c10c6332273eb1866d976871c"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/audit_source/exercise_v2_wire.py": {
+      "bytes": 423,
+      "sha256": "9d734738b57adc52f3d995e489788713f7affb724c34fd891a8d9cb69d294377"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/audit_source/online_audit.py": {
+      "bytes": 11588,
+      "sha256": "783cb620f7abc88b099155c71179bc352a5e2e5649edba0a4f7047682fd24160"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/audit_source/quantization_reference.py": {
+      "bytes": 1917,
+      "sha256": "a98e573960962277d06505eea7e9bb2e3ab31ad12a1ffc36abd14ff2fa7caf31"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/audit_source/raw_tl.py": {
+      "bytes": 12280,
+      "sha256": "dedb3b92296a5704ee7fcd5ca8e7d0fdfc530d1baeeb9972a028d231840b480f"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/audit_source/response_rules.py": {
+      "bytes": 3363,
+      "sha256": "09909ed45d1ac55187e865ea1b7e59038c1c17431edd45ae47870d86904207f9"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/audit_source/test_full_scan_guards.py": {
+      "bytes": 3957,
+      "sha256": "a7f781d7d2f65d75e36d80bc4ed99c6fadd096f9f55ac141297b9f2b6916e3b6"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/audit_source/test_v2_guards.py": {
+      "bytes": 2597,
+      "sha256": "27eb3eb79592dd152ffd7c9a83b9a677ce9547a8a0be155b7bc7df11840c1ec7"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/audit_source/test_v2_online_faults.py": {
+      "bytes": 4563,
+      "sha256": "ac7c4616f57f0f3594075a795079789dc2166f63994b53c29f1d25f9ce6ce650"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j4_immediate/audit.json": {
+      "bytes": 11181,
+      "sha256": "05547c7f20b7cdc9b24df04da018193be024508f9fee0dffd0bd184175e9f354"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j4_immediate/query_results.json": {
+      "bytes": 5596,
+      "sha256": "f09cf48787ac69e1540b3bcafd910326367649c95bfd8625cff98451e3a2c62f"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j4_immediate/result.json": {
+      "bytes": 1556,
+      "sha256": "5f478c2f63a7c31298fce73530c903cbb3c5cc264fa9457d691537552f37faf3"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j4_immediate/runtime_config.json": {
+      "bytes": 455,
+      "sha256": "0f74b60c59c82911ac28adbbb572907020db6cfb342b30b15b6bf2f919ee0706"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j4_immediate/driver_events.jsonl": {
+      "bytes": 3624255,
+      "sha256": "9457f6bd5549a3d3a9eb3de0dd337cba24a2aeec75fc1b611ac72588432562df"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j8_immediate/audit.json": {
+      "bytes": 11178,
+      "sha256": "0649df726f038a8e219ffa83357190b2599ab08915aed4d65332d35cb23967f2"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j8_immediate/query_results.json": {
+      "bytes": 5594,
+      "sha256": "9494dd88361a0155bab4ae2c429b198068d798b37623bd0c05c31647d25a9f5e"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j8_immediate/result.json": {
+      "bytes": 1556,
+      "sha256": "39c89e724894347cd08b7c5547e2fb922d48644689d00bc011ca7b8cbab37d54"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j8_immediate/runtime_config.json": {
+      "bytes": 455,
+      "sha256": "347b284e0fab40b08670d4a5acf4d3a2d5fc8119fac5a75c0622447d2304e985"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j8_immediate/driver_events.jsonl": {
+      "bytes": 3204568,
+      "sha256": "3d299b0831bdc8ca0e359258f040503dfc4f02d52826cff9a1c995b50f1b1757"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j4_threshold3/audit.json": {
+      "bytes": 11177,
+      "sha256": "5a580e481dcf88e4810827b0e0d1aa88b78949c417233d3dd6486082eb27630f"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j4_threshold3/query_results.json": {
+      "bytes": 5594,
+      "sha256": "cfc4ce9232e586a87639c3feecaaf680d9497d63806774fc49de93bcd673b4df"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j4_threshold3/result.json": {
+      "bytes": 1552,
+      "sha256": "606d202adae2a377cd92616834ad08b54ce8e9e16e8f07315cb7eaf07d7a86d7"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j4_threshold3/runtime_config.json": {
+      "bytes": 459,
+      "sha256": "f92c33267539a05941371a883dbee8ff18ce5667dad877cda0d60e76382810b5"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j4_threshold3/driver_events.jsonl": {
+      "bytes": 5832789,
+      "sha256": "5b828fd2e1842491f7fdd1670fca9bef90ef1ca1cef4baf05db10da961888fc1"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j8_threshold3/audit.json": {
+      "bytes": 11190,
+      "sha256": "b48161383d8e8c6ce2c2bd1447d7069d26212d20bbfba6de4aae832dbed3f4f7"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j8_threshold3/query_results.json": {
+      "bytes": 5609,
+      "sha256": "4effc07a206b27a7f53ee56b3b24d9d970eed58c6e3c60b3f4f11184754143a6"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j8_threshold3/result.json": {
+      "bytes": 1552,
+      "sha256": "3081b7980320974510bd036a0c213b0edbea0b921fb1c1c0df9e32b7c753ccc4"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j8_threshold3/runtime_config.json": {
+      "bytes": 459,
+      "sha256": "7f16e832baf631809f04211028fc19c994262bda8fe1c8891cc1d1d92c724753"
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j8_threshold3/driver_events.jsonl": {
+      "bytes": 4376005,
+      "sha256": "80bbc623e01a0c07b122688fc1a6d4c3dcda687e0568ae1c8379ccb9122a0f7f"
+    }
+  },
+  "run_registrations": {
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01": {
+      "preregistration_sha256": "d64613b94997cb516ade3d6cc60246af016de02023dfa57f79e53e7398d26c68",
+      "binary_sha256": "fa57a6194779821e61996f0ebfddfcb1edd50f877d03590633a4f65d5e9cfd19",
+      "compiled_source_sha256": {
+        "driver.cpp": "4d86d143dc555575e78e005c8e739488a64255631f111ab64ec6d4eb628355d5",
+        "driver_main.hpp": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586",
+        "engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+        "engine/verilated_engine.cpp": "2302eb94fed47de3df1ba1e9d55e25d3bfbdd6fcc72d3fe883c4988733576b40",
+        "engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+        "online_main.cpp": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+      }
+    },
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1": {
+      "preregistration_sha256": "fab4a42594d8c49a445bfffba2f3cc5a525edfe4c0016f4dcec2e4cae65e5904",
+      "binary_sha256": "22d929567390ddd35def1cb713e83c811cfed5917c9d4e115c35e631893762c9",
+      "compiled_source_sha256": {
+        "driver.cpp": "b8ef311fb1a4405ed817e662bdf7e271872245e84ea9df706e519407b97d9cd7",
+        "driver_main.hpp": "bc7d7c786552ce7e83fe83be60a637df6f45e67cfcfb69954c88811541c40ff5",
+        "engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+        "engine/verilated_engine.cpp": "2302eb94fed47de3df1ba1e9d55e25d3bfbdd6fcc72d3fe883c4988733576b40",
+        "engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+        "online_main.cpp": "a05b7368ea305ccc864940ecfc36795964bb8393e69f1a560d86c73be478c7e1"
+      }
+    }
+  },
+  "verified": {
+    "audit_pass_32": true,
+    "queries_equal_audit": true,
+    "query_lifecycle_equals_driver": true,
+    "same_32_arrivals": true,
+    "nonnegative_five_intervals_sum_latency": true,
+    "per_query_and_aggregate_S_minus_H_equals_net": true,
+    "cpu_fee_totals_equal_audit": true,
+    "all_consumed_sources_unchanged_during_analysis": true
+  },
+  "raw_engine_hash_scope": "engine hashes retained from independent audits; comparison does not replay or rehash raw engine events",
+  "outputs": {
+    "paired_queries.csv": {
+      "bytes": 15779,
+      "sha256": "c9d9565eef0d0d09d4184cc31e008591b7d7ee53d0bbe06074bb9264f76c671c"
+    },
+    "policy_summary.csv": {
+      "bytes": 2481,
+      "sha256": "d311ef4aad87e26c2908d75f68f0ff08dd4376acd079de80710301e3705388e7"
+    },
+    "summary.json": {
+      "bytes": 185244,
+      "sha256": "6266e571262e4be521550dec79aa2b04529ed1f33743b8921ece5428b76cf242"
+    }
+  }
+}

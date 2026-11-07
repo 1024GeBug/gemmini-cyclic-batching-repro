@@ -1,0 +1,64 @@
+{
+  "scope": "diagnostic synthetic two-linear-layer inputs only; no new RTL run or held-out evidence",
+  "query_count": 32,
+  "source_shape": [
+    896,
+    896
+  ],
+  "dependent_shape": [
+    896,
+    128
+  ],
+  "source_input_manifest_sha256": "fd0a675e53211006b8d26677521a38b4856e6f275e76f32b08af46a925e6b61d",
+  "source_arrivals_unchanged": true,
+  "memory_base": 2147483648,
+  "memory_bytes": 16777216,
+  "offsets": {
+    "a1": 4096,
+    "w1": 32768,
+    "c1": 835584,
+    "a2": 1015808,
+    "c2": 1032192,
+    "w2": 1048576
+  },
+  "lengths": {
+    "a1": 28672,
+    "w1": 802816,
+    "c1": 172032,
+    "a2": 14336,
+    "c2": 8192,
+    "w2": 114688
+  },
+  "addresses": {
+    "a1": 2147487744,
+    "w1": 2147516416,
+    "c1": 2148319232,
+    "a2": 2148499456,
+    "c2": 2148515840,
+    "w2": 2148532224
+  },
+  "w2_seed": 2026110601,
+  "w2_rng": "LCG32: s=(1664525*s+1013904223) mod2^32; ((s>>16) mod5)-2, K-major",
+  "quantization": {
+    "scale": "1/16",
+    "rounding": "nearest_even",
+    "saturation": [
+      -128,
+      127
+    ]
+  },
+  "consumer_capacity": {
+    "a2_rows": 16,
+    "a2_bytes": 14336,
+    "c2_rows": 16,
+    "c2_bytes": 8192,
+    "common_added_bytes": 22528
+  },
+  "c1_epoch_count": 3,
+  "c1_bytes": 172032,
+  "a2_c2_initial_sentinel": 90,
+  "golden_layout": "chronological query-major; C1/C2 int32 little-endian, A2 int8",
+  "reference_note": "Exact integer NumPy reference, independently rederived checker required before runtime interpretation",
+  "policy_parameters": "not registered here; separate common online ON/OFF/CLOSED protocol required",
+  "generator_sha256": "a44207e4d7030a6360dd83700d664de5cd48dc658b1682dbebf01e6c1a5b00ac"
+}

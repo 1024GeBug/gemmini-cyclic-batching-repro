@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "scope": "compile only; no simulator execution; no RTL generation or compilation",
+  "created_utc": "2026-11-04T04:37:04.429197+00:00",
+  "build": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1",
+  "status": "built",
+  "exit_code": 0,
+  "rtl_modified": false,
+  "cpu_instantiated": false,
+  "controller_sources_recompiled": [
+    "driver.cpp",
+    "online_main.cpp",
+    "engine/verilated_engine.cpp"
+  ],
+  "commands": [
+    {
+      "label": "compiler_version",
+      "argv": [
+        "/home/Gemguan/work/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++",
+        "--version"
+      ],
+      "cwd": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1",
+      "exit_code": 0,
+      "stdout": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/compiler_version.stdout.log",
+      "stderr": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/compiler_version.stderr.log"
+    },
+    {
+      "label": "compile_driver",
+      "argv": [
+        "/home/Gemguan/work/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++",
+        "-O1",
+        "-std=gnu++17",
+        "-pthread",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/engine",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/mapper",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/mapper/vendor",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/generated_headers",
+        "-I",
+        "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include",
+        "-I",
+        "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/vltstd",
+        "-MMD",
+        "-MF",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/driver.d",
+        "-c",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/driver.cpp",
+        "-o",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/driver.o"
+      ],
+      "cwd": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1",
+      "exit_code": 0,
+      "stdout": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/compile_driver.stdout.log",
+      "stderr": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/compile_driver.stderr.log"
+    },
+    {
+      "label": "compile_online_main",
+      "argv": [
+        "/home/Gemguan/work/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++",
+        "-O1",
+        "-std=gnu++17",
+        "-pthread",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/engine",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/mapper",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/mapper/vendor",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/generated_headers",
+        "-I",
+        "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include",
+        "-I",
+        "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/vltstd",
+        "-MMD",
+        "-MF",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/online_main.d",
+        "-c",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/online_main.cpp",
+        "-o",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/online_main.o"
+      ],
+      "cwd": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1",
+      "exit_code": 0,
+      "stdout": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/compile_online_main.stdout.log",
+      "stderr": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/compile_online_main.stderr.log"
+    },
+    {
+      "label": "compile_verilated_engine",
+      "argv": [
+        "/home/Gemguan/work/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++",
+        "-O1",
+        "-std=gnu++17",
+        "-pthread",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/engine",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/mapper",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/mapper/vendor",
+        "-I",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/generated_headers",
+        "-I",
+        "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include",
+        "-I",
+        "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/vltstd",
+        "-MMD",
+        "-MF",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/verilated_engine.d",
+        "-c",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/engine/verilated_engine.cpp",
+        "-o",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/verilated_engine.o"
+      ],
+      "cwd": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1",
+      "exit_code": 0,
+      "stdout": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/compile_verilated_engine.stdout.log",
+      "stderr": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/compile_verilated_engine.stderr.log"
+    },
+    {
+      "label": "link",
+      "argv": [
+        "/home/Gemguan/work/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++",
+        "-pthread",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/driver.o",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/online_main.o",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/verilated_engine.o",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2/verilated.o",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2/verilated_threads.o",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2/VGemmini__ALL.a",
+        "-o",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/online_service"
+      ],
+      "cwd": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1",
+      "exit_code": 0,
+      "stdout": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/link.stdout.log",
+      "stderr": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/link.stderr.log"
+    }
+  ],
+  "snapshots": {
+    "source": {
+      "origin": "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/closed_full_runtime/source",
+      "snapshot": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source",
+      "sha256": {
+        "driver.cpp": "b8ef311fb1a4405ed817e662bdf7e271872245e84ea9df706e519407b97d9cd7",
+        "driver_main.hpp": "bc7d7c786552ce7e83fe83be60a637df6f45e67cfcfb69954c88811541c40ff5",
+        "engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+        "engine/verilated_engine.cpp": "2302eb94fed47de3df1ba1e9d55e25d3bfbdd6fcc72d3fe883c4988733576b40",
+        "engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+        "online_main.cpp": "a05b7368ea305ccc864940ecfc36795964bb8393e69f1a560d86c73be478c7e1"
+      }
+    },
+    "mapper": {
+      "origin": "/home/Gemguan/work/codex_gemmini_paper_20261103/online_portable_check_v1/platform/mapper",
+      "snapshot": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/mapper",
+      "sha256": {
+        "gemmini_host.h": "b3963ada9f58b3e3238ca508102f96c78bf8969592162e179dfaa10ef05594da",
+        "host_rocc.h": "bbf5b235eda0fc3bf9074b82f0d97f6acda26c5105b74cc3809035047ecdcd97",
+        "vendor/include/gemmini.h": "18801f4eab0cd2e81e25a6c2aa97c7ed644b693e8d2c24cdeb41ab3a7208336d",
+        "vendor/include/gemmini_counter.h": "5826242287784b9a383d45fdcb6791f8a1651d9d320a1a5f011585a9885b5669",
+        "vendor/include/gemmini_params.h": "3758ae967af3a179497660970201093a7fb624be00173990ce33d3f5c38da924"
+      }
+    },
+    "generated_headers": {
+      "origin": "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2",
+      "snapshot": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/generated_headers",
+      "sha256": {
+        "VGemmini.h": "9e52bf6261897285c6737b45328c95fedc31018e0212322ee07185dd0c17f94a",
+        "VGemmini_AccumulatorMem.h": "acf328fa94b18f44efd8996d5c0d9fc697ed075c95a8626661fec812dae21a45",
+        "VGemmini_MulAddRecFN_e8_s24.h": "b04dbf7ed78bbf24ca5b8d7b2378bf762e51bf6fd1ca0cf9ee87493d7b49e2b2",
+        "VGemmini_Tile.h": "c0ef65bf10c1be5c3e14dc453eab715bee92e4e5ac3e976e2d89c6d27a044c6a",
+        "VGemmini__Syms.h": "f37abdd6916ac45c5d34ebe15a879998515648a88c289f914b186f0991d7eea3",
+        "VGemmini___024root.h": "4d896e4a526983423a986cc59c28d72cb2d2af558cb5bf86c445b51866dcdae0",
+        "VGemmini__pch.h": "6e565f7b33ba6ffd8208d0b6e0ff85417c45c3e755e132cef386269d96a50e27",
+        "init_inputs.h": "93ca95a613e772805fdbb89fa0220731070db3e22087b30fac5e8a8bbb66f10e"
+      }
+    }
+  },
+  "runtime_environment": {
+    "LD_LIBRARY_PATH_prefix": "/home/Gemguan/work/chipyard/.conda-env/lib"
+  },
+  "script": {
+    "origin": "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/closed_full_runtime/build.py",
+    "sha256": "42f0c38ae750830f5265ae20c72787e9376cdc87baa430eb55b6414ecc24800c"
+  },
+  "reused_inputs": {
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2/VGemmini__ALL.a": "4fe4918a2d2f618116de5f2c537d64c912500aab06930db21f4943d72b2832d2",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2/VGemmini___024root.h": "4d896e4a526983423a986cc59c28d72cb2d2af558cb5bf86c445b51866dcdae0",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2/verilated.o": "45b79fd232f7a5eb35fa44817e8f38c43cc5d80dd35c84862a4416046c6ec5e7",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2/verilated_threads.o": "a6410fb4c9a6eb0e1858c115e75784bb159f94a75fe93fa30ccf5afefe6ed731"
+  },
+  "verilator_headers": {
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/gtkwave/fastlz.h": "4dd943f4063e0d13034a87bd66a54f689014b3ea5f92c07b9938f271ffa38a0c",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/gtkwave/fst_config.h": "d8b84770187034bb7aee6c41eeb49725e84ad9dc1d3302903dfc979b03b4d6ad",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/gtkwave/fst_win_unistd.h": "15ec1054e9c5fa8118060ca5b5dab0bbb2d4879c43b53c9457cb416fce97b19f",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/gtkwave/fstapi.h": "9b401991a1d433eec862a8636e2d218e9e572df7a4e62643ebccbf88fc417377",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/gtkwave/lz4.h": "46c366fa9984a5f0aeecf64bf630f23011ced936b9650a1f06531f79c29b7b15",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/gtkwave/wavealloca.h": "c328c316a145aba0473ac6a5201ca832da4bbb5c97374e914cb4ac400b0bb235",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated.h": "aecf9d69da2f43d22f44cbef546551acdee434780efe23df3e3b21e029f8ef90",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_config.h": "fbf042bfe9f461e89cf217c0e168899a1e6f748b47d99f922791a67d9fe6d357",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_cov.h": "ed2ddb29b85945f167f3639ff79862dbc0f456c528b1b10128dfd5dd15ad60d1",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_cov_key.h": "161e775d21f12cafc838ce80bd17618141342cf407791414320757c17fad853c",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_dpi.h": "69fa17a0144e9649f40c4dff4469b4890afb65d31217ef8dc6f19a1b7b827db3",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_fst_c.h": "ca77336b3b4708c252fac5ad31b603ae36f7ce5328da7abd92794a614bf85591",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_fst_sc.h": "6620d7d758b5b217b84511c1b44dda9146fc6ec0e7d348a7d9e8a4952cefaf08",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_funcs.h": "51b693f122dde5fa299da98d73083555bc49678cab402a8515f610f3ced0ec36",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_imp.h": "f4a0b0692c9418852df9def2ca3bafc24462d1a5b2eae16b516ff718271a0465",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_intrinsics.h": "9731d3b3dad87cdf86e1e8e3909f4e477d1251a894f6a5816df509881d545a14",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_profiler.h": "f4836c8eaeeba19ad3858a513825a0ef50530f17b4a11e083ae7e44c89608317",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_save.h": "e25098f63bd1866afa751c24846bf1962b8fc37e87fff192ee817ca0a4fe9d29",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_sc.h": "22881611a751634ecaf7eb30836199b944dba6a9e80efae7bb2da04d66a1b991",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_sc_trace.h": "f5b2f6c4c40cafcacbd3225d2d3977ec61c71c836d8bc5addf721391c1a824a9",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_sym_props.h": "a1dbc1e3a05adf95b3d8d8e849f648c02a06d309e758c1ac129ebcd62e5ff623",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_syms.h": "06d17236598b393538d3b5fb3da253bd372f9a3a02dadab0b19413c3341f3db2",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_threads.h": "137d3319acf4254d0b863c3db90accd49278e8f581d242a70e449e95a55afe71",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_timing.h": "a9a7cac039c64d345ae4d7f65b8cb6222c53a3d2d06595d4f0863c2935377e33",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_trace.h": "a493b099a8d3f02bdd2e5ed48b0e710bc2e0d83ed0c710ccfd0e1772b5f4b629",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_trace_imp.h": "9512d1d986deefbe0641d4d3c523868f429e26c7195cd31b516b73bc7ee7da9e",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_types.h": "ec82e15305efee430c2263c86b8b1fa9b0e41108dceb3b696a9167967095f003",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_vcd_c.h": "80b1cdd60aabd353a1cc1d6e7ca30a0b94128ae8f0b41253ab79258511bf122b",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_vcd_sc.h": "1f62f52c30cdec9113598c0abd698a50cafa515c26cf9e24cd13e28cbbd8f6f8",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_vpi.h": "29d9299f6de596c1e30ae59626fad50e80b2eb18a369a0dea1332a234fe68108",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilatedos.h": "0e69b2e4aec493a3b2eb8db8afdd53a1f374d3b8694de17a932d90c8c855c370",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/vltstd/sv_vpi_user.h": "efaf9987f27c9734df3dde28d457fa36c5f64504b86aa292df423bd61cab2a76",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/vltstd/svdpi.h": "bbe9cb930e7d0c16b9fab2d2744169c2eaaa8cfca797631138883a194681a1fb",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/vltstd/vpi_user.h": "6ec3e0d8d9fe696fd494b609db9d83d4f61d7d47458b5a19d3bf6de35f3b4d16"
+  },
+  "compiler": {
+    "path": "/home/Gemguan/work/chipyard/.conda-env/bin/x86_64-conda-linux-gnu-c++",
+    "sha256": "01143157a02c904234153b7ef169aae66798d5258c9a84678b220e056f7e528e",
+    "version": "x86_64-conda-linux-gnu-c++ (conda-forge gcc 13.2.0-13) 13.2.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+  },
+  "compiled_objects": {
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/driver.o": "dad201373aada52d672dcaedc37294c68e95059cd0c29a4a2360750e84cf3800",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/online_main.o": "223a982f4c6cad0fada1efdf0088555156fe04873fffd02bc735d6a9792bd01b",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/verilated_engine.o": "475e3d48ae8ebf54d10755c97f2576bbcabc9113cac8e395080e2e7dcc7ada71"
+  },
+  "dependency_files": {
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/driver.d": "57aae5df668d3c6ed2591cb2250ce873f099d621adf2944275ad0d747f93dddb",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/online_main.d": "62d99e6b6b6c973854339498281c93eae9c5a743edeaa31a74ec0731084d8bda",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/verilated_engine.d": "e8875d76a71a2b0aebde3318b3a9f5b3b44e8b034bbe33f77001e7e1ecfac56a"
+  },
+  "compiler_reported_project_dependencies": {
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated.h": "aecf9d69da2f43d22f44cbef546551acdee434780efe23df3e3b21e029f8ef90",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_config.h": "fbf042bfe9f461e89cf217c0e168899a1e6f748b47d99f922791a67d9fe6d357",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_funcs.h": "51b693f122dde5fa299da98d73083555bc49678cab402a8515f610f3ced0ec36",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilated_types.h": "ec82e15305efee430c2263c86b8b1fa9b0e41108dceb3b696a9167967095f003",
+    "/home/Gemguan/work/chipyard/.conda-env/share/verilator/include/verilatedos.h": "0e69b2e4aec493a3b2eb8db8afdd53a1f374d3b8694de17a932d90c8c855c370",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/generated_headers/VGemmini.h": "9e52bf6261897285c6737b45328c95fedc31018e0212322ee07185dd0c17f94a",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/generated_headers/VGemmini___024root.h": "4d896e4a526983423a986cc59c28d72cb2d2af558cb5bf86c445b51866dcdae0",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/generated_headers/init_inputs.h": "93ca95a613e772805fdbb89fa0220731070db3e22087b30fac5e8a8bbb66f10e",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/mapper/gemmini_host.h": "b3963ada9f58b3e3238ca508102f96c78bf8969592162e179dfaa10ef05594da",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/mapper/host_rocc.h": "bbf5b235eda0fc3bf9074b82f0d97f6acda26c5105b74cc3809035047ecdcd97",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/mapper/vendor/include/gemmini_counter.h": "5826242287784b9a383d45fdcb6791f8a1651d9d320a1a5f011585a9885b5669",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/mapper/vendor/include/gemmini_params.h": "3758ae967af3a179497660970201093a7fb624be00173990ce33d3f5c38da924",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/driver.cpp": "b8ef311fb1a4405ed817e662bdf7e271872245e84ea9df706e519407b97d9cd7",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/driver_main.hpp": "bc7d7c786552ce7e83fe83be60a637df6f45e67cfcfb69954c88811541c40ff5",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/engine/verilated_engine.cpp": "2302eb94fed47de3df1ba1e9d55e25d3bfbdd6fcc72d3fe883c4988733576b40",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/source/online_main.cpp": "a05b7368ea305ccc864940ecfc36795964bb8393e69f1a560d86c73be478c7e1"
+  },
+  "binary": {
+    "path": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/builds/closed_full_v1/online_service",
+    "sha256": "22d929567390ddd35def1cb713e83c811cfed5917c9d4e115c35e631893762c9",
+    "bytes": 2844360
+  },
+  "finished_utc": "2026-11-04T04:37:11.682497+00:00"
+}

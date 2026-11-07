@@ -1,0 +1,19 @@
+# Generated Verilator and compiler outputs
+obj_dir/
+build/
+*.o
+*.a
+*.so
+*.vcd
+*.fst
+*.d
+
+# Local editor and Python caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Keep the checked-in evidence logs and CSV/JSON results; ignore only transient run directories.
+tmp/
+scratch/

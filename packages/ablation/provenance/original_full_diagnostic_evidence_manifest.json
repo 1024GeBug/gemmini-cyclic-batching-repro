@@ -1,0 +1,278 @@
+{
+  "execution_summary.json": {
+    "bytes": 5130,
+    "sha256": "e5e1b8f30de2663e72d62d90e1b30d90b529f8c252d183b11a6911d19fab83ac"
+  },
+  "postregistration.json": {
+    "bytes": 5628,
+    "sha256": "a184c3d937f838a9449c588487d2c36de7647c7930d3b05dd88e3c150438a5ca"
+  },
+  "preregistration.json": {
+    "bytes": 12008,
+    "sha256": "0b79851f7352100a5180cd6d6322fe84f1116b12ebb6f77c612936fbb4d1f56d"
+  },
+  "query_five_intervals.csv": {
+    "bytes": 12231,
+    "sha256": "21d4986b32169331949010b2af734b353bccd8064b7e63d53f030b35e96c92ec"
+  },
+  "query_paired_deltas.csv": {
+    "bytes": 5343,
+    "sha256": "a9065312b05d4ee6be4cc3dcd16ae6db61a0e3021efdd8b2986e35ce0087e2ba"
+  },
+  "REPORT.md": {
+    "bytes": 1953,
+    "sha256": "f03cc6c5abbee99544982c4af9c7ebfbc7c072c256bbe4b44150e87cbed89562"
+  },
+  "summary.json": {
+    "bytes": 10768,
+    "sha256": "d42cc5760498d73aa9b0e0ec72bf66b96fa518064f0b3dd94c9f382318295b59"
+  },
+  "audit_source/audit_source.py": {
+    "bytes": 1454,
+    "sha256": "7b244a983d045e665f293699b8d288d1f61daf3b4aa6a53cd41879c336078348"
+  },
+  "audit_source/check_retention.py": {
+    "bytes": 9937,
+    "sha256": "ce94995bd4d0209b821d790f6874f0ea14a2d8c7074335d5a4440707159b19b6"
+  },
+  "audit_source/check_retention_v2.py": {
+    "bytes": 11073,
+    "sha256": "3760c681d57870225293df5c0feee74f00574a1d5360a6dd65c908493c73db85"
+  },
+  "audit_source/check_retention_v3.py": {
+    "bytes": 11207,
+    "sha256": "bfb2c1922d2ecae138ba52806336742748c7eb6083fe88ec3d2925c6ec7232ac"
+  },
+  "audit_source/check_v2.py": {
+    "bytes": 53882,
+    "sha256": "295dc3d451f56dc8702f4712068afd3b7400e706e90589a0155af103f40b6763"
+  },
+  "audit_source/diagnostic_input_reference.py": {
+    "bytes": 15087,
+    "sha256": "93266898a2017b12c94fa2e32f01b09122ba311c10c6332273eb1866d976871c"
+  },
+  "audit_source/exercise_v2_wire.py": {
+    "bytes": 423,
+    "sha256": "9d734738b57adc52f3d995e489788713f7affb724c34fd891a8d9cb69d294377"
+  },
+  "audit_source/online_audit.py": {
+    "bytes": 11588,
+    "sha256": "783cb620f7abc88b099155c71179bc352a5e2e5649edba0a4f7047682fd24160"
+  },
+  "audit_source/ONLINE_AUDIT_PROTOCOL.md": {
+    "bytes": 2646,
+    "sha256": "2a94e689e1918a615a5a0a821060d1fb0844dc3df0971cadeda170ad1c868636"
+  },
+  "audit_source/quantization_reference.py": {
+    "bytes": 1917,
+    "sha256": "a98e573960962277d06505eea7e9bb2e3ab31ad12a1ffc36abd14ff2fa7caf31"
+  },
+  "audit_source/raw_tl.py": {
+    "bytes": 12280,
+    "sha256": "dedb3b92296a5704ee7fcd5ca8e7d0fdfc530d1baeeb9972a028d231840b480f"
+  },
+  "audit_source/response_rules.py": {
+    "bytes": 3363,
+    "sha256": "09909ed45d1ac55187e865ea1b7e59038c1c17431edd45ae47870d86904207f9"
+  },
+  "audit_source/test_retention_faults.py": {
+    "bytes": 4089,
+    "sha256": "9047b21021260ba5f847ba25c6a5921ece02a70c082082ef9507f183dc634126"
+  },
+  "audit_source/test_v2_guards.py": {
+    "bytes": 2597,
+    "sha256": "27eb3eb79592dd152ffd7c9a83b9a677ce9547a8a0be155b7bc7df11840c1ec7"
+  },
+  "audit_source/test_v2_online_faults.py": {
+    "bytes": 4563,
+    "sha256": "ac7c4616f57f0f3594075a795079789dc2166f63994b53c29f1d25f9ce6ce650"
+  },
+  "frozen_local_sources/high_a2_restore.patch": {
+    "bytes": 1013,
+    "sha256": "bc8050018fba348660df42701f70394ce1907b62235be9302a392a1379006b2e"
+  },
+  "frozen_local_sources/high_a2_retain.patch": {
+    "bytes": 1965,
+    "sha256": "5e68855e7fa00d3c87e63ac0282c68f9c2bb1978158d37d35eb99134470e9c06"
+  },
+  "frozen_local_sources/meta.json": {
+    "bytes": 221,
+    "sha256": "6931160cfd2be23f285e1843c72bc33a28753339ab433503467cc859faf8084d"
+  },
+  "frozen_local_sources/PREREGISTRATION.md": {
+    "bytes": 1777,
+    "sha256": "31e73c57b857977b89b226bf68302aaf5c37fae56feeffe6f779037ae10b613b"
+  },
+  "frozen_local_sources/source_freeze.json": {
+    "bytes": 2229,
+    "sha256": "ffc90b0b5cdf4c90aaf5d342be702f40ee0e9a7412f35741838cd71a5363bf5c"
+  },
+  "frozen_local_sources/high_a2_restore/build.py": {
+    "bytes": 10091,
+    "sha256": "b20be3701c94bcf18b71beb9d0a8bec95729480aa91e2d243a041b33c10d4e02"
+  },
+  "frozen_local_sources/high_a2_restore/source/driver.cpp": {
+    "bytes": 31852,
+    "sha256": "a748277cbbdf3784ba2d4e8f1a48721089b5b0a9b58a70723f1888c81cfdaa4a"
+  },
+  "frozen_local_sources/high_a2_restore/source/driver_main.hpp": {
+    "bytes": 991,
+    "sha256": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586"
+  },
+  "frozen_local_sources/high_a2_restore/source/online_main.cpp": {
+    "bytes": 4020,
+    "sha256": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+  },
+  "frozen_local_sources/high_a2_restore/source/engine/common_api.hpp": {
+    "bytes": 7542,
+    "sha256": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13"
+  },
+  "frozen_local_sources/high_a2_restore/source/engine/verilated_engine.cpp": {
+    "bytes": 35670,
+    "sha256": "81deb1e74f7b55ac2777337d780ea01dd871387da04f5d095ece40c35bd0a97c"
+  },
+  "frozen_local_sources/high_a2_restore/source/engine/verilated_engine.hpp": {
+    "bytes": 303,
+    "sha256": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493"
+  },
+  "frozen_local_sources/high_a2_retain/build.py": {
+    "bytes": 10091,
+    "sha256": "b20be3701c94bcf18b71beb9d0a8bec95729480aa91e2d243a041b33c10d4e02"
+  },
+  "frozen_local_sources/high_a2_retain/source/driver.cpp": {
+    "bytes": 32114,
+    "sha256": "ca7435f919b682670293057c249f6a48d168689271a14c5352798b299991f0fd"
+  },
+  "frozen_local_sources/high_a2_retain/source/driver_main.hpp": {
+    "bytes": 991,
+    "sha256": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586"
+  },
+  "frozen_local_sources/high_a2_retain/source/online_main.cpp": {
+    "bytes": 4020,
+    "sha256": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+  },
+  "frozen_local_sources/high_a2_retain/source/engine/common_api.hpp": {
+    "bytes": 7542,
+    "sha256": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13"
+  },
+  "frozen_local_sources/high_a2_retain/source/engine/verilated_engine.cpp": {
+    "bytes": 35670,
+    "sha256": "81deb1e74f7b55ac2777337d780ea01dd871387da04f5d095ece40c35bd0a97c"
+  },
+  "frozen_local_sources/high_a2_retain/source/engine/verilated_engine.hpp": {
+    "bytes": 303,
+    "sha256": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493"
+  },
+  "high_a2_restore/actual_memory.bin.gz": {
+    "bytes": 362584,
+    "sha256": "645a8f2b3dc4e563bd4c72353a1d15d37d722c954cb507677cccae83c8c41ad3"
+  },
+  "high_a2_restore/build_manifest.json": {
+    "bytes": 24150,
+    "sha256": "a61391ea28534f8e509b0eb8dc807e7c457ee7e7652f69fa8c21f9dc78d6de07"
+  },
+  "high_a2_restore/driver_events.jsonl.gz": {
+    "bytes": 527033,
+    "sha256": "3f1e55344117f19f928868bc8d37d5e89d1fcc47506f049440c032a15f04ef54"
+  },
+  "high_a2_restore/engine_events.jsonl.gz": {
+    "bytes": 53997834,
+    "sha256": "3ac369b24312bae31aafe06415f66be8c8772009be08d2a5a457e01488127da4"
+  },
+  "high_a2_restore/independent_audit_v2.json": {
+    "bytes": 10518,
+    "sha256": "22e1f6310021532ae50c363f0918ffe136845d03a79f4927e7f71e7ff6209fd1"
+  },
+  "high_a2_restore/independent_retention_audit_v3.json": {
+    "bytes": 13234,
+    "sha256": "72bc17e54950bd9b4a24e226d58b717f7d564a32272dc1fd2fac4ab0814cc13d"
+  },
+  "high_a2_restore/protocol_audit.stderr.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "high_a2_restore/protocol_audit.stdout.log": {
+    "bytes": 10518,
+    "sha256": "22e1f6310021532ae50c363f0918ffe136845d03a79f4927e7f71e7ff6209fd1"
+  },
+  "high_a2_restore/query_results.json": {
+    "bytes": 5594,
+    "sha256": "a8d113374d2dd55dd7d73f400b6c92ab542b12308d0576bd62d3c6f99e0d03ad"
+  },
+  "high_a2_restore/query_times.csv": {
+    "bytes": 819,
+    "sha256": "d2e6638fa0ebc2f5e2ac906834cd3fca985fa6501879620e36040ca2a639cc28"
+  },
+  "high_a2_restore/result.json": {
+    "bytes": 1555,
+    "sha256": "3515d98897f8dec5c81382eeb04d6bc616957fac3f7ec943ce2537d6c9058c22"
+  },
+  "high_a2_restore/runtime_config.json": {
+    "bytes": 430,
+    "sha256": "070d958d107089598a27defc91642f932a8f9c865544f78e5cb34539cac84f3b"
+  },
+  "high_a2_restore/SRAM_audit.stderr.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "high_a2_restore/SRAM_audit.stdout.log": {
+    "bytes": 13234,
+    "sha256": "72bc17e54950bd9b4a24e226d58b717f7d564a32272dc1fd2fac4ab0814cc13d"
+  },
+  "high_a2_retain/actual_memory.bin.gz": {
+    "bytes": 362584,
+    "sha256": "22fbc93a6f826c7754628e4c002d626e85bc163787526847e75fa1ce46b380c0"
+  },
+  "high_a2_retain/build_manifest.json": {
+    "bytes": 24081,
+    "sha256": "baff5ef6ff434bbb72b2cd68386161b70f8e6d54551914ee82edac461a56c492"
+  },
+  "high_a2_retain/driver_events.jsonl.gz": {
+    "bytes": 508605,
+    "sha256": "f8d7e20ffa01ca52d572fa414654218e2c8c9378c1ae3913a5e3cc5a9d3bc55d"
+  },
+  "high_a2_retain/engine_events.jsonl.gz": {
+    "bytes": 53890245,
+    "sha256": "d2ecc273a2220e8321d2b1c9b6c0a6c2de54f5e79d12747e3e4fdfabe7ffd2a0"
+  },
+  "high_a2_retain/independent_audit_v2.json": {
+    "bytes": 10518,
+    "sha256": "0a1a294a09f80855bf7a0841a95193adad4514beef88832183e874379cc96939"
+  },
+  "high_a2_retain/independent_retention_audit_v3.json": {
+    "bytes": 13228,
+    "sha256": "05c579f23e021e194841092feb87eb30f79f9f5a55144765f010fdce8d4f5727"
+  },
+  "high_a2_retain/protocol_audit.stderr.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "high_a2_retain/protocol_audit.stdout.log": {
+    "bytes": 10518,
+    "sha256": "0a1a294a09f80855bf7a0841a95193adad4514beef88832183e874379cc96939"
+  },
+  "high_a2_retain/query_results.json": {
+    "bytes": 5594,
+    "sha256": "dd2651452311ae7d03fa5f7c6ab87ca3e9ba471e2ccd67c70c568282f3961cf8"
+  },
+  "high_a2_retain/query_times.csv": {
+    "bytes": 819,
+    "sha256": "dd7a7feed03901b40c202b7c7263adce85daa6ed3d0f434d809f83d1c5eda8ca"
+  },
+  "high_a2_retain/result.json": {
+    "bytes": 1555,
+    "sha256": "4dccf8014e654553900f407f42c92ce10084f8e5b575a5df3c625674db0f2ecc"
+  },
+  "high_a2_retain/runtime_config.json": {
+    "bytes": 430,
+    "sha256": "070d958d107089598a27defc91642f932a8f9c865544f78e5cb34539cac84f3b"
+  },
+  "high_a2_retain/SRAM_audit.stderr.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "high_a2_retain/SRAM_audit.stdout.log": {
+    "bytes": 13228,
+    "sha256": "05c579f23e021e194841092feb87eb30f79f9f5a55144765f010fdce8d4f5727"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "zip": "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/staging/repro_v6/repro_v6_source_package.zip",
+  "zip_bytes": 1436691,
+  "zip_sha256": "4206400fb9d8d541e5098724a050dd950e14c2919e2168ca29459fda7dd89329",
+  "archive_files": 226,
+  "uncompressed_bytes": 22859897,
+  "extracted_to": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_zipcheck",
+  "all_archive_files_byte_equal_to_staging_source": true,
+  "source_manifest_sha256": "ea601904855daeca599a92fd79f3c23ace3769b81457f46502c8f45b97368b42",
+  "source_files_verified": 192,
+  "validation_evidence_files_verified": 32,
+  "forbidden_build_objects_or_full_traces_found": false,
+  "compile_repeated_during_zipcheck": false
+}

@@ -1,0 +1,15 @@
+{
+  "source_sha256": "18801f4eab0cd2e81e25a6c2aa97c7ed644b693e8d2c24cdeb41ab3a7208336d",
+  "adapted_sha256": "b3963ada9f58b3e3238ca508102f96c78bf8969592162e179dfaa10ef05594da",
+  "edits": [
+    {
+      "from": "#include \"rocc-software/src/xcustom.h\"",
+      "to": "#include \"host_rocc.h\""
+    },
+    {
+      "from": "#define gemmini_fence() asm volatile(\"fence\")",
+      "to": "#define gemmini_fence() host_fence()"
+    }
+  ],
+  "tiling_algorithm_modified": false
+}

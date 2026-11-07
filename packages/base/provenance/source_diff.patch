@@ -1,0 +1,60 @@
+--- online_runtime/build.py
++++ closed_full_runtime/build.py
+@@ -77,7 +77,7 @@
+     parser.add_argument("--name", required=True, help="new immutable build name")
+     parser.add_argument(
+         "--build-root", type=Path,
+-        default=PAPER_ROOT / "consumer_gate/online_runtime/builds",
++        default=PAPER_ROOT / "consumer_gate/closed_full_runtime/builds",
+     )
+     parser.add_argument(
+         "--reused", type=Path, default=PAPER_ROOT / "online_service/reused_v2",
+--- online_runtime/source/driver.cpp
++++ closed_full_runtime/source/driver.cpp
+@@ -145,10 +145,12 @@
+     require(cfg.n==896&&cfg.k==896&&cfg.query_count<=48,"registered gate shape");
+     require(cfg.policy=="on"||cfg.policy=="off"||cfg.policy=="closed","registered policy");
+     require(cfg.tile_j==4||(cfg.policy=="closed"&&cfg.tile_j==8),"registered tile J4/J8");
++    require(cfg.c1_group_panels==2||(cfg.policy=="closed"&&cfg.c1_group_panels==14),"registered C1 group panels");
+     require(cfg.output_budget_bytes>=3*epoch_bytes(),"three C1 epochs required");
+     require(cfg.poll_cycles==64&&cfg.decision_cycles==16&&cfg.issue_cycles==1&&cfg.sink_cycles==64,"registered common costs");
+     log->event(0,"driver_config",{{"policy",str(cfg.policy)},{"n",num(cfg.n)},{"k",num(cfg.k)},
+       {"query_count",num(cfg.query_count)},{"output_base",num(cfg.output_base)},{"output_budget_bytes",num(cfg.output_budget_bytes)},
++      {"c1_group_panels",num(cfg.c1_group_panels)},
+       {"poll",num(64)},{"decision",num(16)},{"issue",num(1)},{"sink",num(64)},{"observer_controls_execution","false"}});
+     counter(2,"counter_init",[this](uint32_t,Cycle){counter(0x80005008,"counter_init",[this](uint32_t,Cycle){
+       counter(0,"counter_baseline",[this](uint32_t v,Cycle){require(v==0,"nonzero initial counter");baseline=v;log->event(now,"counter_baseline",{{"value",num(v)}});});});});
+@@ -282,8 +284,8 @@
+     auto owners=live();if(owners.empty())return;
+     unsigned p=cfg.policy=="closed"?batch_p:scan%14;uint64_t e=cfg.policy=="closed"?batch_epoch:scan/14;
+     if(!buffers.count(e)){require(can_epoch(e),"next C1 epoch capacity");metadata("epoch_update",[this,e]{allocate(e);});fn([this]{c1_group();});return;}
+-    unsigned rows=0,count=std::min(2u,14-p);for(auto id:owners){auto& q=queries.at(id);rows=std::max(rows,q.slot+1);count=std::min(count,14-q.sealed);}
+-    require(count>0,"C1 group empty");require(cfg.tile_j!=8||count==2,"J8 two credits");
++    unsigned rows=0,count=std::min(cfg.c1_group_panels,14-p);for(auto id:owners){auto& q=queries.at(id);rows=std::max(rows,q.slot+1);count=std::min(count,14-q.sealed);}
++    require(count>0,"C1 group empty");require(cfg.tile_j!=8||count%2==0,"J8 full macro pairs");
+     auto panels=std::make_shared<std::vector<PanelId>>();auto& b=buffers.at(e);
+     for(unsigned offset=0;offset<count;offset++)metadata("panel_snapshot",[this,e,p,offset,rows,owners,panels]{auto& b=buffers.at(e);PanelPlan plan;
+       plan.panel=next_panel++;plan.physical_panel=p+offset;plan.epoch=b.identity;plan.generation=b.generation;plan.reserved_credit=1;plan.effective_queries=owners;
+--- online_runtime/source/driver_main.hpp
++++ closed_full_runtime/source/driver_main.hpp
+@@ -12,6 +12,7 @@
+   std::uint64_t output_budget_bytes=0;
+   std::string policy="cyclic"; // cyclic or closed
+   unsigned tile_j=1, batch_target=16;
++  unsigned c1_group_panels=2;
+   Cycle timeout_cycles=0;
+   Cycle poll_cycles=64, decision_cycles=16, issue_cycles=1, sink_cycles=64;
+ };
+--- online_runtime/source/online_main.cpp
++++ closed_full_runtime/source/online_main.cpp
+@@ -17,8 +17,9 @@
+  std::ifstream mf(req("--meta"));std::string s((std::istreambuf_iterator<char>(mf)),{});DriverConfig dc;
+  dc.n=field(s,"n");dc.k=field(s,"k");dc.query_count=field(s,"query_count");dc.input_base=field(s,"a_address");dc.weight_base=field(s,"b_address");dc.output_base=field(s,"c_address");dc.output_budget_bytes=field(s,"output_budget_bytes");dc.weight2_base=field(s,"w2_address");dc.a2_base=field(s,"a2_address");dc.c2_base=field(s,"c2_address");
+  dc.policy=val("--policy","cyclic");dc.tile_j=std::stoul(val("--tile-j","1"));dc.batch_target=std::stoul(val("--batch-target","16"));dc.timeout_cycles=std::stoull(val("--timeout-cycles","0"));dc.poll_cycles=std::stoull(val("--poll-cycles","64"));dc.decision_cycles=std::stoull(val("--decision-cycles","16"));dc.issue_cycles=std::stoull(val("--issue-cycles","1"));dc.sink_cycles=std::stoull(val("--sink-cycles","64"));
++ dc.c1_group_panels=std::stoul(val("--c1-group-panels","2"));
+  out=req("--output-dir");if(std::filesystem::exists(out))throw std::runtime_error("output exists");std::filesystem::create_directories(out);made=true;std::ofstream dl(out/"driver_events.jsonl");
+  auto bundle=create_driver(dc,[&](const std::string& x){dl<<x<<'\n';});EngineConfig ec;ec.cpu_free_completion_adapter=false;ec.memory_image=req("--memory-image");ec.arrivals_csv=req("--arrivals");ec.event_log=(out/"engine_events.jsonl").string();ec.dump_memory=(out/"actual_memory.bin").string();ec.report=(out/"result.json").string();ec.memory_latency_cycles=std::stoul(val("--memory-latency","2"));ec.a_stall_period=std::stoul(val("--a-stall-period","0"));ec.d_stall_period=std::stoul(val("--d-stall-period","0"));ec.max_cycles=std::stoull(val("--max-cycles","5000000"));
+- std::ofstream rc(out/"runtime_config.json");rc<<"{\"n\":"<<dc.n<<",\"k\":"<<dc.k<<",\"query_count\":"<<dc.query_count<<",\"input_base\":"<<dc.input_base<<",\"weight_base\":"<<dc.weight_base<<",\"output_base\":"<<dc.output_base<<",\"output_budget_bytes\":"<<dc.output_budget_bytes<<",\"w2_address\":"<<dc.weight2_base<<",\"a2_address\":"<<dc.a2_base<<",\"c2_address\":"<<dc.c2_base<<",\"policy\":"<<jq(dc.policy)<<",\"tile_j\":"<<dc.tile_j<<",\"batch_target\":"<<dc.batch_target<<",\"timeout_cycles\":"<<dc.timeout_cycles<<",\"poll_cycles\":"<<dc.poll_cycles<<",\"decision_cycles\":"<<dc.decision_cycles<<",\"issue_cycles\":"<<dc.issue_cycles<<",\"sink_cycles\":"<<dc.sink_cycles<<",\"memory_latency_cycles\":"<<ec.memory_latency_cycles<<",\"a_stall_period\":"<<ec.a_stall_period<<",\"d_stall_period\":"<<ec.d_stall_period<<",\"max_cycles\":"<<ec.max_cycles<<"}\n";
++ std::ofstream rc(out/"runtime_config.json");rc<<"{\"n\":"<<dc.n<<",\"k\":"<<dc.k<<",\"query_count\":"<<dc.query_count<<",\"input_base\":"<<dc.input_base<<",\"weight_base\":"<<dc.weight_base<<",\"output_base\":"<<dc.output_base<<",\"output_budget_bytes\":"<<dc.output_budget_bytes<<",\"w2_address\":"<<dc.weight2_base<<",\"a2_address\":"<<dc.a2_base<<",\"c2_address\":"<<dc.c2_base<<",\"policy\":"<<jq(dc.policy)<<",\"tile_j\":"<<dc.tile_j<<",\"batch_target\":"<<dc.batch_target<<",\"timeout_cycles\":"<<dc.timeout_cycles<<",\"c1_group_panels\":"<<dc.c1_group_panels<<",\"poll_cycles\":"<<dc.poll_cycles<<",\"decision_cycles\":"<<dc.decision_cycles<<",\"issue_cycles\":"<<dc.issue_cycles<<",\"sink_cycles\":"<<dc.sink_cycles<<",\"memory_latency_cycles\":"<<ec.memory_latency_cycles<<",\"a_stall_period\":"<<ec.a_stall_period<<",\"d_stall_period\":"<<ec.d_stall_period<<",\"max_cycles\":"<<ec.max_cycles<<"}\n";
+  auto engine=make_engine(argc,argv,ec,*bundle.controller,*bundle.ledger);while(engine->step()){}save_driver_outputs(bundle,out.string());std::cout<<"ONLINE_DRAINED policy="<<dc.policy<<" cycles="<<engine->cycle()<<"\n";return 0;
+  }catch(const std::exception&e){std::cerr<<"FAIL "<<e.what()<<"\n";if(made){std::ofstream f(out/"failure.json");f<<"{\"status\":\"failed\",\"detail\":"<<jq(e.what())<<"}\n";}return 1;}}

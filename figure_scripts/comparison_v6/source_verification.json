@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "sources": {
+    "summary.json": "6266e571262e4be521550dec79aa2b04529ed1f33743b8921ece5428b76cf242",
+    "paired_queries.csv": "c9d9565eef0d0d09d4184cc31e008591b7d7ee53d0bbe06074bb9264f76c671c",
+    "policy_summary.csv": "d311ef4aad87e26c2908d75f68f0ff08dd4376acd079de80710301e3705388e7",
+    "manifest.json": "23a34679452c01a190781156eec71119e4d3becfe046cd505e77970ddcc192ac"
+  },
+  "checks": [
+    "manifest output SHA256 equality",
+    "all source verification booleans true",
+    "32 aligned external arrivals and IDs",
+    "five nonnegative lifecycle intervals sum to final latency",
+    "per-query means equal JSON and CSV",
+    "32 paired differences and S-H equality"
+  ],
+  "inference_unit": "one_diagnostic_workload",
+  "counts": {
+    "faster": 6,
+    "slower": 26,
+    "tied": 0
+  },
+  "mean_on_minus_closed_cycles": 18717.625
+}

@@ -1,0 +1,138 @@
+{
+  "status": "pass",
+  "scope": "independent online functional/protocol diagnostic; no held-out performance inference",
+  "queries": 4,
+  "wire": {
+    "tl_a": 44592,
+    "transactions": 43824,
+    "get_payload_bytes": 2774016,
+    "max_live_sources": 21,
+    "tl_d": 173856,
+    "put_payload_bytes": 19968,
+    "put_acks": 480,
+    "accepted_commands": 778,
+    "arrivals": 4,
+    "drained_cycle": 207343
+  },
+  "commands": {
+    "accepted": 778,
+    "pending_samples": 142052,
+    "held_command_cycles": 141274,
+    "real_responses": 24,
+    "held_response_cycles": 0
+  },
+  "historical_outputs": {
+    "c1": {
+      "bytes": 14336,
+      "sha256": "a7381c6c44037a33d7995d9a12c1142f9278663e5649c67f5c4740612ce1364d",
+      "exactly_once_value_and_ack": true
+    },
+    "a2": {
+      "bytes": 3584,
+      "sha256": "d3df689e4535521c3aefb5b2891e3736844468e6a19f0faeb164c38b477a3337",
+      "exactly_once_value_and_ack": true
+    },
+    "c2": {
+      "bytes": 2048,
+      "sha256": "f443421c06b10358577ef58e671ec6cb0ffce2ab7cc282f49e43dcae29be108f",
+      "exactly_once_value_and_ack": true
+    }
+  },
+  "stage_input_dependencies": {
+    "stages": 12,
+    "all_expected_input_bytes_read": true,
+    "get_payload_bytes": 2774016
+  },
+  "closed_full_scan_isa": {
+    "status": "pass",
+    "static_scan_groups": 3,
+    "static_panels_per_group": 14,
+    "native_loop_macros": 42,
+    "native_loop_macro_slot_capacity": 2,
+    "native_macro_slot_occupancy_measured": false,
+    "one_shared_config_per_group": true,
+    "six_words_per_macro": true,
+    "first_macro_only_nonzero_A": true,
+    "B_C_fixed_layout_nonzero": true
+  },
+  "full_memory_bytes_equal": 16777216,
+  "actual_busy_samples": 207323,
+  "sealed_stages": 12,
+  "cpu_modeled_cycles": {
+    "counter_poll": 1344,
+    "decision": 96,
+    "delivery": 256,
+    "issue": 778,
+    "metadata": 1360,
+    "poll": 384,
+    "response_decision": 384,
+    "status_decision": 192,
+    "status_poll": 768
+  },
+  "resources": {
+    "max_input_slots": 2,
+    "max_live_static_panel_plans": 14,
+    "registered_static_panel_plan_limit": 14,
+    "native_loop_macro_slot_capacity": 2,
+    "native_macro_slot_occupancy_measured": false,
+    "native_macro_capacity_evidence": "unchanged pinned RTL/source audit; actual RoCC ready handshakes verified",
+    "c1_generation_allocations": 3,
+    "c1_buffer_reuse_exercised": false,
+    "slot_reuse_exercised": true,
+    "rotated_admission_exercised": false,
+    "consumer_cohorts": 3
+  },
+  "query_results": [
+    {
+      "query": 0,
+      "arrival": 0,
+      "admitted": 237,
+      "c1_notified": 54737,
+      "consumer_start": 54897,
+      "a2_sealed": 55798,
+      "c2_notified": 69329,
+      "delivery_end": 69393,
+      "panel_count": 14
+    },
+    {
+      "query": 1,
+      "arrival": 7180,
+      "admitted": 69633,
+      "c1_notified": 124197,
+      "consumer_start": 124389,
+      "a2_sealed": 126018,
+      "c2_notified": 137675,
+      "delivery_end": 137739,
+      "panel_count": 14
+    },
+    {
+      "query": 2,
+      "arrival": 66788,
+      "admitted": 69649,
+      "c1_notified": 124213,
+      "consumer_start": 124389,
+      "a2_sealed": 126018,
+      "c2_notified": 137675,
+      "delivery_end": 137803,
+      "panel_count": 14
+    },
+    {
+      "query": 3,
+      "arrival": 75320,
+      "admitted": 138043,
+      "c1_notified": 192543,
+      "consumer_start": 192703,
+      "a2_sealed": 193604,
+      "c2_notified": 207135,
+      "delivery_end": 207199,
+      "panel_count": 14
+    }
+  ],
+  "hashes": {
+    "checker": "45edaa400d724520fb7d1ed51c3fbad2792daa7404444ef3adcf61ea11eaaab7",
+    "fixture_manifest": "e0e781aba066e8daa17bb43703d9f51786747e057d9bd2a7d9bc7356668ff109",
+    "engine_events": "7b2a7147ab6cc71bb4ea3c75a66c970c5502bd42fd16d9d975763c3b0399c609",
+    "driver_events": "624439389461883ea078a0456359ff3ef4ef7c2e0ccfffd0479cc58a6fa67a97",
+    "actual_memory": "75e2fabbda0bf8b5a1c415ff691269c5ee496e19f44a8be5b8ae9a9c4540dfc5"
+  }
+}

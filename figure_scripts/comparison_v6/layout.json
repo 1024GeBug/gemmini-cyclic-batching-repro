@@ -1,0 +1,667 @@
+{
+  "figure_id": "comparison_v6",
+  "layout_engine": "manual_axes",
+  "manual_axes_fallback": true,
+  "dimensions_cm": [
+    18.0,
+    6.8
+  ],
+  "text_elements": [
+    {
+      "text": "115.6",
+      "role": "annotation",
+      "panel_id": "a",
+      "bbox": [
+        0.4061220747716895,
+        0.728625138734739,
+        0.037864814814814816,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "left",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "130.4",
+      "role": "annotation",
+      "panel_id": "a",
+      "bbox": [
+        0.4430337183694825,
+        0.5985613207547169,
+        0.03904074074074069,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "left",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "130.1",
+      "role": "annotation",
+      "panel_id": "a",
+      "bbox": [
+        0.44226747574200914,
+        0.46849750277469476,
+        0.039040740740740744,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "left",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "96.9",
+      "role": "annotation",
+      "panel_id": "a",
+      "bbox": [
+        0.3592567884322679,
+        0.33843368479467256,
+        0.030691666666666666,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "left",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "平均最终交付延迟（千周期）",
+      "role": "x_label",
+      "panel_id": "a",
+      "bbox": [
+        0.19271481481481484,
+        0.14417892156862744,
+        0.2079037037037037,
+        0.04046568627450981
+      ],
+      "font_size_pt": 8.2,
+      "rotation": 0.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "0",
+      "role": "tick_label",
+      "panel_id": "a",
+      "bbox": [
+        0.10953796296296295,
+        0.2105841503267974,
+        0.008701851851851851,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "40",
+      "role": "tick_label",
+      "panel_id": "a",
+      "bbox": [
+        0.2053392440385591,
+        0.2105841503267974,
+        0.017403703703703702,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "80",
+      "role": "tick_label",
+      "panel_id": "a",
+      "bbox": [
+        0.3054914510400812,
+        0.2105841503267974,
+        0.017403703703703702,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "120",
+      "role": "tick_label",
+      "panel_id": "a",
+      "bbox": [
+        0.40129273211567734,
+        0.2105841503267974,
+        0.026105555555555555,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "ON",
+      "role": "tick_label",
+      "panel_id": "a",
+      "bbox": [
+        0.07970864197530864,
+        0.7248898446170919,
+        0.023400925925925926,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "right",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "OFF",
+      "role": "tick_label",
+      "panel_id": "a",
+      "bbox": [
+        0.07194753086419753,
+        0.5948260266370698,
+        0.031162037037037037,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "right",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "两块 J4 即时",
+      "role": "tick_label",
+      "panel_id": "a",
+      "bbox": [
+        0.015385493827160484,
+        0.463672747872734,
+        0.08772407407407408,
+        0.03953186274509805
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "right",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "整轮 J4 即时",
+      "role": "tick_label",
+      "panel_id": "a",
+      "bbox": [
+        0.015385493827160484,
+        0.3336089298927118,
+        0.08772407407407408,
+        0.03953186274509805
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "right",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "6快，26慢；正值更慢",
+      "role": "annotation",
+      "panel_id": "b",
+      "bbox": [
+        0.8220759259259259,
+        0.7649108455882352,
+        0.15122407407407407,
+        0.04097150735294119
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "right",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "请求编号（到达顺序）",
+      "role": "x_label",
+      "panel_id": "b",
+      "bbox": [
+        0.6925370370370371,
+        0.14386764705882352,
+        0.15992592592592592,
+        0.04077696078431373
+      ],
+      "font_size_pt": 8.2,
+      "rotation": 0.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "0",
+      "role": "tick_label",
+      "panel_id": "b",
+      "bbox": [
+        0.5716591750841751,
+        0.2105841503267974,
+        0.008701851851851851,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "8",
+      "role": "tick_label",
+      "panel_id": "b",
+      "bbox": [
+        0.6730733164983166,
+        0.2105841503267974,
+        0.008701851851851851,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "16",
+      "role": "tick_label",
+      "panel_id": "b",
+      "bbox": [
+        0.770136531986532,
+        0.2105841503267974,
+        0.017403703703703702,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "24",
+      "role": "tick_label",
+      "panel_id": "b",
+      "bbox": [
+        0.8715506734006735,
+        0.2105841503267974,
+        0.017403703703703702,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "31",
+      "role": "tick_label",
+      "panel_id": "b",
+      "bbox": [
+        0.9603468434343435,
+        0.2105841503267974,
+        0.01728611111111111,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "ON − 整轮 J4（千周期）",
+      "role": "y_label",
+      "panel_id": "b",
+      "bbox": [
+        0.5050956018518519,
+        0.31983946078431363,
+        0.01508125,
+        0.464732843137255
+      ],
+      "font_size_pt": 8.2,
+      "rotation": 90.0,
+      "anchor": "center",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "-20",
+      "role": "tick_label",
+      "panel_id": "b",
+      "bbox": [
+        0.5299762345679012,
+        0.2864982698961938,
+        0.022577777777777776,
+        0.03735294117647056
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "right",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "0",
+      "role": "tick_label",
+      "panel_id": "b",
+      "bbox": [
+        0.5438521604938271,
+        0.41625605536332183,
+        0.008701851851851851,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "right",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "20",
+      "role": "tick_label",
+      "panel_id": "b",
+      "bbox": [
+        0.5351503086419753,
+        0.5460138408304499,
+        0.017403703703703702,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "right",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "40",
+      "role": "tick_label",
+      "panel_id": "b",
+      "bbox": [
+        0.5351503086419753,
+        0.6757716262975778,
+        0.017403703703703702,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "right",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "60",
+      "role": "tick_label",
+      "panel_id": "b",
+      "bbox": [
+        0.5351503086419753,
+        0.8055294117647059,
+        0.017403703703703702,
+        0.037352941176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "right",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "(a) 平均延迟的五区间",
+      "role": "panel_title",
+      "panel_id": "figure",
+      "bbox": [
+        0.015,
+        0.913741881127451,
+        0.1698037037037037,
+        0.04898682598039217
+      ],
+      "font_size_pt": 9.1,
+      "rotation": 0.0,
+      "anchor": "left",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "(b) ON − 整轮 J4 即时：32请求配对",
+      "role": "panel_title",
+      "panel_id": "figure",
+      "bbox": [
+        0.5261111111111112,
+        0.9139558823529412,
+        0.2856324074074074,
+        0.04855882352941177
+      ],
+      "font_size_pt": 9.1,
+      "rotation": 0.0,
+      "anchor": "left",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "准入等待",
+      "role": "legend_label",
+      "panel_id": "a",
+      "bbox": [
+        0.04111111111111111,
+        0.09274954044117646,
+        0.06255925925925926,
+        0.04097150735294119
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "left",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "准入→C1通知跨度",
+      "role": "legend_label",
+      "panel_id": "a",
+      "bbox": [
+        0.1938888888888889,
+        0.09308026960784313,
+        0.12946944444444441,
+        0.04031004901960785
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "left",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "消费者等待",
+      "role": "legend_label",
+      "panel_id": "a",
+      "bbox": [
+        0.40222222222222226,
+        0.09257444852941177,
+        0.07819907407407407,
+        0.041321691176470596
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "left",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "消费者跨度",
+      "role": "legend_label",
+      "panel_id": "a",
+      "bbox": [
+        0.04111111111111111,
+        0.023943167892156867,
+        0.07819907407407407,
+        0.04034895833333334
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "left",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    },
+    {
+      "text": "交付跨度",
+      "role": "legend_label",
+      "panel_id": "a",
+      "bbox": [
+        0.1938888888888889,
+        0.023729166666666673,
+        0.06255925925925923,
+        0.04077696078431373
+      ],
+      "font_size_pt": 8.0,
+      "rotation": 0.0,
+      "anchor": "left",
+      "priority": 100,
+      "can_wrap": false,
+      "can_abbreviate": false,
+      "in_axes_bounds": true,
+      "overlap_checked": true
+    }
+  ],
+  "panels": [
+    {
+      "id": "a",
+      "bbox": [
+        0.11388888888888887,
+        0.27647058823529413,
+        0.3655555555555556,
+        0.5514705882352942
+      ],
+      "plot_type": "horizontal stacked means"
+    },
+    {
+      "id": "b",
+      "bbox": [
+        0.5633333333333334,
+        0.27647058823529413,
+        0.41833333333333333,
+        0.5514705882352942
+      ],
+      "plot_type": "paired signed lollipops"
+    }
+  ],
+  "semantic_color_map": {
+    "admission_wait": "#2179AA",
+    "c1_span": "#A5B9C8",
+    "cohort_wait": "#7855A1",
+    "consumer_span": "#E5A052",
+    "delivery_span": "#293744"
+  }
+}

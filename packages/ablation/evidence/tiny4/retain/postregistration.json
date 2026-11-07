@@ -1,0 +1,180 @@
+{
+  "status": "pass",
+  "time_unix": 1793791080.6853557,
+  "mode": "retain",
+  "queries": 4,
+  "tile_j": 4,
+  "policy": "on",
+  "memory_latency": 2,
+  "cpu_instantiated": false,
+  "rtl_modified": false,
+  "scope": "tiny functional and retention coverage; no 32-request performance conclusion",
+  "argv": [
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/builds/retention_observer_v1/online_service",
+    "--meta",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/tiny_inputs/meta.json",
+    "--memory-image",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1/memory.bin",
+    "--arrivals",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/tiny_inputs/arrivals.csv",
+    "--output-dir",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_retention_v1",
+    "--policy",
+    "on",
+    "--tile-j",
+    "4",
+    "--batch-target",
+    "1",
+    "--timeout-cycles",
+    "0",
+    "--memory-latency",
+    "2",
+    "--max-cycles",
+    "10000000"
+  ],
+  "frozen_sha256": {
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/builds/retention_observer_v1/online_service": "2f866d5ba8955d044041634dcf1a6c9b3b3394e8b5f4944b0ae4b45d7c0a90c3",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/builds/retention_observer_v1/manifest.json": "8efe6acd776b299c96ce28b78848349a2f86ddbd45043dcfe4d837a96221f088",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/source_freeze.json": "5a9e1514e587503c70671080c94370851b4623fe5c16be574ca72930e8f3dcee",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/STATIC_AUDIT_AND_PREREGISTRATION.md": "1a32793849280fba6108835b73b099eb3d4311ad108c124b18cecdcf57667a01",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/PREREGISTRATION_CORRECTION_V2.md": "aeda4d963257983a1d9a09dc74166b62bca87f9d6dcbafeb3c0540967542b0d6",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/run_tiny_v2.py": "e6e4658601b5db78abf5e02b643057e11b4b613e22030cca79e9b2f595508952",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/tiny_inputs/meta.json": "5362a70caceef335a09e6a3849b8b48323b2a50b7407896f9a5cc34f25e373db",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/tiny_inputs/arrivals.csv": "88ddac7a700f393f1f45bbbf900dad5bb5e02ee49c86e9c4bd9ec6715845b499",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/audit/check_v2.py": "295dc3d451f56dc8702f4712068afd3b7400e706e90589a0155af103f40b6763",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/audit/raw_tl.py": "dedb3b92296a5704ee7fcd5ca8e7d0fdfc530d1baeeb9972a028d231840b480f",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/audit/check_retention_v2.py": "3760c681d57870225293df5c0feee74f00574a1d5360a6dd65c908493c73db85",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1/A1.bin": "c652b13111f0fcd04cf156a845610015f85540abe8f4229de1f09fb9a64367c9",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1/arrivals.csv": "e5e3ecee8ec67ba548ae3aa73033b7bf1406924ff7dbf763b942a6c878fae8b4",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1/fixture.json": "487c7534068291c8c5f6fbea0d219625dbcafc53dbb72d78fb21aa48e707247e",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1/golden_a2.bin": "97c48d9b98a622fd4af2f862f97ec12856fbd31ea5cdd68684c8d3ef8c270897",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1/golden_c1.bin": "b1104d48f701625dd5462e76b395a94decf3520b2e6b4128831da4a19ea6c0fd",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1/golden_c2.bin": "51f964342b8ed31c27dd0ba50d358632f550d2bb0891a05df87320ea5090afca",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1/manifest.json": "e0e781aba066e8daa17bb43703d9f51786747e057d9bd2a7d9bc7356668ff109",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1/memory.bin": "c23a137dfb049122ffadcf9f7bc79d9989316173b122aed986c0d9a019a03396",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1/W1.bin": "a87c0988b5ebb8d184a4d66e3a0d3c1af9324d5c7db63be906083f3b3d74e810",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1/W2.bin": "fd642cbbc8337747fe464ed5b59f0799a7fb75f75b85640519532d61b85ed48d",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/variant/source/driver.cpp": "ca7435f919b682670293057c249f6a48d168689271a14c5352798b299991f0fd",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/variant/source/online_main.cpp": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/variant/source/engine/verilated_engine.cpp": "81deb1e74f7b55ac2777337d780ea01dd871387da04f5d095ece40c35bd0a97c",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/variant/source/driver_main.hpp": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/variant/source/engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/variant/source/engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493"
+  },
+  "model_inputs": {
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2/VGemmini__ALL.a": "4fe4918a2d2f618116de5f2c537d64c912500aab06930db21f4943d72b2832d2",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2/VGemmini___024root.h": "4d896e4a526983423a986cc59c28d72cb2d2af558cb5bf86c445b51866dcdae0",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2/verilated.o": "45b79fd232f7a5eb35fa44817e8f38c43cc5d80dd35c84862a4416046c6ec5e7",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/online_service/reused_v2/verilated_threads.o": "a6410fb4c9a6eb0e1858c115e75784bb159f94a75fe93fa30ccf5afefe6ed731"
+  },
+  "exit_code": 0,
+  "finished_unix": 1793791090.7579894,
+  "audit_results": [
+    {
+      "argv": [
+        "python3",
+        "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/audit/check_v2.py",
+        "--input-dir",
+        "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1",
+        "--run-dir",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_retention_v1",
+        "--queries",
+        "4",
+        "--out",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_retention_v1/independent_audit_v2.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "python3",
+        "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/audit/check_retention_v2.py",
+        "--input-dir",
+        "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_inputs/diagnostic_q896_n128_v1",
+        "--run-dir",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_retention_v1",
+        "--mode",
+        "retain",
+        "--out",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_retention_v1/independent_retention_audit.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "all_frozen_inputs_unchanged": true,
+  "model_unchanged": true,
+  "outputs": {
+    "audit_0.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit_0.stdout.log": {
+      "bytes": 3295,
+      "sha256": "6ce2834ce29545be525b20457adf3ad86d1cfaf02c13ad63a17d39e980b4690e"
+    },
+    "query_a2_outputs.bin": {
+      "bytes": 3584,
+      "sha256": "d3df689e4535521c3aefb5b2891e3736844468e6a19f0faeb164c38b477a3337"
+    },
+    "result.json": {
+      "bytes": 1532,
+      "sha256": "12bf59a42f1013340688d0d87eeba51438e9b97cddf61804524967ccfed45e81"
+    },
+    "query_outputs.bin": {
+      "bytes": 14336,
+      "sha256": "a7381c6c44037a33d7995d9a12c1142f9278663e5649c67f5c4740612ce1364d"
+    },
+    "process.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "actual_memory.bin": {
+      "bytes": 16777216,
+      "sha256": "fb0e351506e5e23b50d5e2e5c2abe0154065685c9202c5c14d91cef699499095"
+    },
+    "audit_1.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "independent_audit_v2.json": {
+      "bytes": 3295,
+      "sha256": "6ce2834ce29545be525b20457adf3ad86d1cfaf02c13ad63a17d39e980b4690e"
+    },
+    "audit_1.stdout.log": {
+      "bytes": 2263,
+      "sha256": "625b41b3f05b6619fb0d1ac42bd40334897cadce2d7ea1db6a9091328905131f"
+    },
+    "independent_retention_audit.json": {
+      "bytes": 2263,
+      "sha256": "625b41b3f05b6619fb0d1ac42bd40334897cadce2d7ea1db6a9091328905131f"
+    },
+    "query_results.json": {
+      "bytes": 671,
+      "sha256": "1f44e08492c701d6ab59e35abedd3c094b36de8bb2e9a42f993c182e44168cad"
+    },
+    "engine_events.jsonl": {
+      "bytes": 73378775,
+      "sha256": "c9648841049b2a97dd38741742ad4816ce845dac42ccedeb7f97a5aa29e1d130"
+    },
+    "driver_events.jsonl": {
+      "bytes": 418093,
+      "sha256": "5416a2aa781477567940c9dc330cc9bc41615494c654444dca14422e3c9ca142"
+    },
+    "query_c2_outputs.bin": {
+      "bytes": 2048,
+      "sha256": "f443421c06b10358577ef58e671ec6cb0ffce2ab7cc282f49e43dcae29be108f"
+    },
+    "process.stdout.log": {
+      "bytes": 123,
+      "sha256": "27a8494587ad8b1bda2a9e4cbf8bdfcc0ef7235f15b072f22e77638c993c5a58"
+    },
+    "query_times.csv": {
+      "bytes": 117,
+      "sha256": "0d13d6ffe0c0ffe1c4b0fb6d97a851c20410af79ceb538bf9e9a7fa38ab35b62"
+    },
+    "runtime_config.json": {
+      "bytes": 428,
+      "sha256": "c0f5dc561eaf8bf823d3ad24c3f6756b6f3ecc2317943dc9f29c8d5aadfba811"
+    }
+  }
+}

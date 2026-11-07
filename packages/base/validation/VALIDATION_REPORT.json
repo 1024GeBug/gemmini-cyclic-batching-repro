@@ -1,0 +1,313 @@
+{
+  "status": "fresh_rtl_build_and_two_tiny_audits_passed",
+  "scope": "two current source profiles; one four-query case each; no new 32-query experiment",
+  "validation_root": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1",
+  "built_source_manifest_sha256": "153c1428c14623fe9f18798ea9137ab161ad39112b473153687e3b69dcc0dece",
+  "published_source_manifest_sha256": "ea601904855daeca599a92fd79f3c23ace3769b81457f46502c8f45b97368b42",
+  "only_postbuild_package_source_change": [
+    "README.md"
+  ],
+  "all_code_RTL_mapper_input_checker_bytes_unchanged": true,
+  "published_readme_change": "removed requirement for further authorization to run diagnostic32; replaced planned tiny wording with actual validation status",
+  "builds": [
+    {
+      "profile": "online",
+      "binary": {
+        "path": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/build_online/obj/online_service",
+        "bytes": 2758808,
+        "sha256": "85fd129559a2cdf3fbc9693270414f34627500890b485c549b34a2e614f78add"
+      },
+      "tool_versions": {
+        "verilator": "Verilator 5.022 2024-02-24 rev UNKNOWN.REV",
+        "g++": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+        "make": "GNU Make 4.3",
+        "perl": "This is perl 5, version 34, subversion 0 (v5.34.0) built for x86_64-linux-gnu-thread-multi"
+      },
+      "package_source_manifest_sha256": "153c1428c14623fe9f18798ea9137ab161ad39112b473153687e3b69dcc0dece",
+      "argv": [
+        "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/release_repro/.validation/toolchain/prefix/bin/verilator",
+        "--cc",
+        "--exe",
+        "--build",
+        "-j",
+        "2",
+        "--assert",
+        "-Wno-fatal",
+        "--top-module",
+        "Gemmini",
+        "--Mdir",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/build_online/obj",
+        "--output-split",
+        "10000",
+        "--output-split-cfuncs",
+        "100",
+        "-CFLAGS",
+        "-O1 -std=gnu++17 -pthread -I/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/platform/rtl/default16 -I/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/runtimes/online/source -I/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/runtimes/online/source/engine -I/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/platform/mapper -I/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/platform/mapper/vendor",
+        "-LDFLAGS",
+        "-pthread",
+        "+define+PRINTF_COND=0",
+        "-f",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/build_online/rtl.f",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/runtimes/online/source/engine/verilated_engine.cpp",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/runtimes/online/source/online_main.cpp",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/runtimes/online/source/driver.cpp",
+        "-o",
+        "online_service"
+      ],
+      "rtl_file_count": 134,
+      "rtl_filelist_sha256": "fd3852728f23eb3822045ff8ca1ac729b6a563fc6dcc1d9e21d4e1e8f96bcde1",
+      "fresh_generated_model": {
+        "VGemmini__ALL.a": {
+          "bytes": 3926412,
+          "sha256": "01120eb3eb8cff12f13596e266fcf74921008b63408ec69781f7d888107730f2"
+        },
+        "VGemmini___024root.h": {
+          "bytes": 1252376,
+          "sha256": "4d896e4a526983423a986cc59c28d72cb2d2af558cb5bf86c445b51866dcdae0"
+        },
+        "verilated.o": {
+          "bytes": 286208,
+          "sha256": "086984f7bd8b6b8df5bc633a470a2a224beb544ca930acbdc92384ce4e46e0ca"
+        },
+        "verilated_threads.o": {
+          "bytes": 26728,
+          "sha256": "ec5d4dff856dc784f36b5f9725f1526953eaf0e817023af40bc9cb0cad0eea75"
+        }
+      }
+    },
+    {
+      "profile": "closed_full",
+      "binary": {
+        "path": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/build_closed_full/obj/online_service",
+        "bytes": 2758808,
+        "sha256": "2c35cedce289e690cec4e16f8dd3ac813225f5a03bcbf37ed61de7640daa3623"
+      },
+      "tool_versions": {
+        "verilator": "Verilator 5.022 2024-02-24 rev UNKNOWN.REV",
+        "g++": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+        "make": "GNU Make 4.3",
+        "perl": "This is perl 5, version 34, subversion 0 (v5.34.0) built for x86_64-linux-gnu-thread-multi"
+      },
+      "package_source_manifest_sha256": "153c1428c14623fe9f18798ea9137ab161ad39112b473153687e3b69dcc0dece",
+      "argv": [
+        "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/release_repro/.validation/toolchain/prefix/bin/verilator",
+        "--cc",
+        "--exe",
+        "--build",
+        "-j",
+        "2",
+        "--assert",
+        "-Wno-fatal",
+        "--top-module",
+        "Gemmini",
+        "--Mdir",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/build_closed_full/obj",
+        "--output-split",
+        "10000",
+        "--output-split-cfuncs",
+        "100",
+        "-CFLAGS",
+        "-O1 -std=gnu++17 -pthread -I/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/platform/rtl/default16 -I/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/runtimes/closed_full/source -I/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/runtimes/closed_full/source/engine -I/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/platform/mapper -I/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/platform/mapper/vendor",
+        "-LDFLAGS",
+        "-pthread",
+        "+define+PRINTF_COND=0",
+        "-f",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/build_closed_full/rtl.f",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/runtimes/closed_full/source/engine/verilated_engine.cpp",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/runtimes/closed_full/source/online_main.cpp",
+        "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/runtimes/closed_full/source/driver.cpp",
+        "-o",
+        "online_service"
+      ],
+      "rtl_file_count": 134,
+      "rtl_filelist_sha256": "fd3852728f23eb3822045ff8ca1ac729b6a563fc6dcc1d9e21d4e1e8f96bcde1",
+      "fresh_generated_model": {
+        "VGemmini__ALL.a": {
+          "bytes": 3926412,
+          "sha256": "01120eb3eb8cff12f13596e266fcf74921008b63408ec69781f7d888107730f2"
+        },
+        "VGemmini___024root.h": {
+          "bytes": 1252376,
+          "sha256": "4d896e4a526983423a986cc59c28d72cb2d2af558cb5bf86c445b51866dcdae0"
+        },
+        "verilated.o": {
+          "bytes": 286208,
+          "sha256": "086984f7bd8b6b8df5bc633a470a2a224beb544ca930acbdc92384ce4e46e0ca"
+        },
+        "verilated_threads.o": {
+          "bytes": 26728,
+          "sha256": "ec5d4dff856dc784f36b5f9725f1526953eaf0e817023af40bc9cb0cad0eea75"
+        }
+      }
+    }
+  ],
+  "tiny_comparisons": [
+    {
+      "profile": "online",
+      "run_directory": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/runs/online_on_tiny",
+      "historical_tiny": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/v2tiny_on02",
+      "run_exit": 0,
+      "audit_exit": 0,
+      "audit_status": "pass",
+      "queries": 4,
+      "drained_cycle": 213040,
+      "audit_hashes": {
+        "checker": "84f209d4de4214abb087aa086fcf9a779e9fd278bce64a47ace428e642e85be9",
+        "fixture_manifest": "e0e781aba066e8daa17bb43703d9f51786747e057d9bd2a7d9bc7356668ff109",
+        "engine_events": "189bea3dcf2c4ae9b6a3ce8adb27adb696a3e710ce8ed632d63c5389feae106f",
+        "driver_events": "6283f1460448f0f8d5a45f6b59de749f91c48bf36fbec70bf8e5e5563e51bf7b",
+        "actual_memory": "fb0e351506e5e23b50d5e2e5c2abe0154065685c9202c5c14d91cef699499095"
+      },
+      "artifact_equality": {
+        "engine_events.jsonl": {
+          "fresh_sha256": "189bea3dcf2c4ae9b6a3ce8adb27adb696a3e710ce8ed632d63c5389feae106f",
+          "historical_sha256": "189bea3dcf2c4ae9b6a3ce8adb27adb696a3e710ce8ed632d63c5389feae106f",
+          "equal": true
+        },
+        "driver_events.jsonl": {
+          "fresh_sha256": "6283f1460448f0f8d5a45f6b59de749f91c48bf36fbec70bf8e5e5563e51bf7b",
+          "historical_sha256": "6283f1460448f0f8d5a45f6b59de749f91c48bf36fbec70bf8e5e5563e51bf7b",
+          "equal": true
+        },
+        "actual_memory.bin": {
+          "fresh_sha256": "fb0e351506e5e23b50d5e2e5c2abe0154065685c9202c5c14d91cef699499095",
+          "historical_sha256": "fb0e351506e5e23b50d5e2e5c2abe0154065685c9202c5c14d91cef699499095",
+          "equal": true
+        },
+        "query_outputs.bin": {
+          "fresh_sha256": "a7381c6c44037a33d7995d9a12c1142f9278663e5649c67f5c4740612ce1364d",
+          "historical_sha256": "a7381c6c44037a33d7995d9a12c1142f9278663e5649c67f5c4740612ce1364d",
+          "equal": true
+        },
+        "query_a2_outputs.bin": {
+          "fresh_sha256": "d3df689e4535521c3aefb5b2891e3736844468e6a19f0faeb164c38b477a3337",
+          "historical_sha256": "d3df689e4535521c3aefb5b2891e3736844468e6a19f0faeb164c38b477a3337",
+          "equal": true
+        },
+        "query_c2_outputs.bin": {
+          "fresh_sha256": "f443421c06b10358577ef58e671ec6cb0ffce2ab7cc282f49e43dcae29be108f",
+          "historical_sha256": "f443421c06b10358577ef58e671ec6cb0ffce2ab7cc282f49e43dcae29be108f",
+          "equal": true
+        },
+        "query_results.json": {
+          "fresh_sha256": "4348cf60549d9e629d1cb048f08db852acc783f49353a52d7167b297eccbed96",
+          "historical_sha256": "4348cf60549d9e629d1cb048f08db852acc783f49353a52d7167b297eccbed96",
+          "equal": true
+        },
+        "query_times.csv": {
+          "fresh_sha256": "86571f60b7d55c47be51c4e7d0631dcb609ef8badf2ae2511ce4a5d5dcee10d1",
+          "historical_sha256": "86571f60b7d55c47be51c4e7d0631dcb609ef8badf2ae2511ce4a5d5dcee10d1",
+          "equal": true
+        },
+        "result.json": {
+          "fresh_sha256": "da516715287bc84302d3e36e2b3d2f9925f130cd673356ce4ec220e1ad2de28c",
+          "historical_sha256": "da516715287bc84302d3e36e2b3d2f9925f130cd673356ce4ec220e1ad2de28c",
+          "equal": true
+        }
+      },
+      "runtime_config_differences": {
+        "batch_target": {
+          "fresh": 1,
+          "historical": 16
+        }
+      },
+      "config_difference_interpretation": "ON does not use the CLOSED batch_target parameter"
+    },
+    {
+      "profile": "closed_full",
+      "run_directory": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/runs/full_j4_tiny",
+      "historical_tiny": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/tiny_j4_v1",
+      "run_exit": 0,
+      "audit_exit": 0,
+      "audit_status": "pass",
+      "queries": 4,
+      "drained_cycle": 207343,
+      "audit_hashes": {
+        "checker": "45edaa400d724520fb7d1ed51c3fbad2792daa7404444ef3adcf61ea11eaaab7",
+        "fixture_manifest": "e0e781aba066e8daa17bb43703d9f51786747e057d9bd2a7d9bc7356668ff109",
+        "engine_events": "7b2a7147ab6cc71bb4ea3c75a66c970c5502bd42fd16d9d975763c3b0399c609",
+        "driver_events": "624439389461883ea078a0456359ff3ef4ef7c2e0ccfffd0479cc58a6fa67a97",
+        "actual_memory": "75e2fabbda0bf8b5a1c415ff691269c5ee496e19f44a8be5b8ae9a9c4540dfc5"
+      },
+      "artifact_equality": {
+        "engine_events.jsonl": {
+          "fresh_sha256": "7b2a7147ab6cc71bb4ea3c75a66c970c5502bd42fd16d9d975763c3b0399c609",
+          "historical_sha256": "7b2a7147ab6cc71bb4ea3c75a66c970c5502bd42fd16d9d975763c3b0399c609",
+          "equal": true
+        },
+        "driver_events.jsonl": {
+          "fresh_sha256": "624439389461883ea078a0456359ff3ef4ef7c2e0ccfffd0479cc58a6fa67a97",
+          "historical_sha256": "624439389461883ea078a0456359ff3ef4ef7c2e0ccfffd0479cc58a6fa67a97",
+          "equal": true
+        },
+        "actual_memory.bin": {
+          "fresh_sha256": "75e2fabbda0bf8b5a1c415ff691269c5ee496e19f44a8be5b8ae9a9c4540dfc5",
+          "historical_sha256": "75e2fabbda0bf8b5a1c415ff691269c5ee496e19f44a8be5b8ae9a9c4540dfc5",
+          "equal": true
+        },
+        "query_outputs.bin": {
+          "fresh_sha256": "a7381c6c44037a33d7995d9a12c1142f9278663e5649c67f5c4740612ce1364d",
+          "historical_sha256": "a7381c6c44037a33d7995d9a12c1142f9278663e5649c67f5c4740612ce1364d",
+          "equal": true
+        },
+        "query_a2_outputs.bin": {
+          "fresh_sha256": "d3df689e4535521c3aefb5b2891e3736844468e6a19f0faeb164c38b477a3337",
+          "historical_sha256": "d3df689e4535521c3aefb5b2891e3736844468e6a19f0faeb164c38b477a3337",
+          "equal": true
+        },
+        "query_c2_outputs.bin": {
+          "fresh_sha256": "f443421c06b10358577ef58e671ec6cb0ffce2ab7cc282f49e43dcae29be108f",
+          "historical_sha256": "f443421c06b10358577ef58e671ec6cb0ffce2ab7cc282f49e43dcae29be108f",
+          "equal": true
+        },
+        "query_results.json": {
+          "fresh_sha256": "51f4c91a653173b4dafc8e49d8c34cad297c06bb07c6e8b04c7bd7204bd7f403",
+          "historical_sha256": "51f4c91a653173b4dafc8e49d8c34cad297c06bb07c6e8b04c7bd7204bd7f403",
+          "equal": true
+        },
+        "query_times.csv": {
+          "fresh_sha256": "f31fb444697f36040ad8d39088f7c967a76c6ad015e00bb30de6aa8af160e5ae",
+          "historical_sha256": "f31fb444697f36040ad8d39088f7c967a76c6ad015e00bb30de6aa8af160e5ae",
+          "equal": true
+        },
+        "result.json": {
+          "fresh_sha256": "ad28816aee5b40d66fdf22d56e13b76633b1d1fc86bf86952afc9a5493bda532",
+          "historical_sha256": "ad28816aee5b40d66fdf22d56e13b76633b1d1fc86bf86952afc9a5493bda532",
+          "equal": true
+        }
+      },
+      "runtime_config_differences": {},
+      "config_difference_interpretation": "identical runtime configuration"
+    }
+  ],
+  "toolchain_assets": {
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/release_repro/.validation/toolchain/downloads/verilator-5.022.tar.gz": {
+      "bytes": 3761782,
+      "sha256": "3c2f5338f4b6ce7e2f47a142401acdd18cbf4c5da06092618d6d036c0afef12d"
+    },
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/release_repro/.validation/toolchain/prefix/bin/verilator": {
+      "bytes": 25039,
+      "sha256": "ad7359381d2e448ed5b7e7d7c296e0356c0d69dfa489a4b61c434f262241595e"
+    },
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/release_repro/.validation/toolchain/prefix/bin/verilator_bin": {
+      "bytes": 24165104,
+      "sha256": "085611cf2b30525474c9c8223ca991ffd246f24a7a29750722a221547e9f50de"
+    },
+    "/usr/bin/g++": {
+      "bytes": 932680,
+      "sha256": "2360901d864cf10bfd6296e261cb2c14053552a80377761ab07146ec9ec9a2c0"
+    }
+  },
+  "historical_objects_used": false,
+  "cpu_instantiated": false,
+  "new_32_query_runs": 0,
+  "distribution_excludes": [
+    "objects",
+    "archives",
+    "executables",
+    "full runtime traces",
+    "run memory dumps",
+    "local toolchain cache"
+  ],
+  "remaining_scope": "J8/threshold3 and complete 10-arm fresh-model reruns were not newly executed during packaging; scripts support the frozen configurations"
+}

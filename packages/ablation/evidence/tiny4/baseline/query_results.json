@@ -1,0 +1,6 @@
+[
+{"query":0,"arrival":0,"admitted":237,"c1_notified":78768,"consumer_start":78928,"a2_sealed":79829,"c2_notified":93344,"delivery_end":93408,"panel_count":14},
+{"query":1,"arrival":7180,"admitted":11614,"c1_notified":105185,"consumer_start":105345,"a2_sealed":106246,"c2_notified":117862,"delivery_end":117926,"panel_count":14},
+{"query":2,"arrival":66788,"admitted":67535,"c1_notified":174042,"consumer_start":174202,"a2_sealed":175103,"c2_notified":188634,"delivery_end":188698,"panel_count":14},
+{"query":3,"arrival":75320,"admitted":93952,"c1_notified":200139,"consumer_start":200299,"a2_sealed":201200,"c2_notified":212832,"delivery_end":212896,"panel_count":14}
+]

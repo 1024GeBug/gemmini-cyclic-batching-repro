@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "matplotlib": "3.10.7",
+  "fonts": [
+    {
+      "path": "C:\\Windows\\Fonts\\arial.ttf",
+      "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    {
+      "path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "sha256": "9b1959db3b3abeb7efdaec26edf7dfe871a6039de8d614af7248575207be629e"
+    }
+  ]
+}

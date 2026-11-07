@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "registered_utc": "2026-11-04T11:17:53.090274+00:00",
+  "profile": "closed_full",
+  "case": "tiny4",
+  "queries": 4,
+  "argv": [
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/build_closed_full/obj/online_service",
+    "--meta",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/inputs/tiny4/meta.json",
+    "--arrivals",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/inputs/tiny4/arrivals.csv",
+    "--memory-image",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/inputs/diagnostic_q896_n128_v1/memory.bin",
+    "--output-dir",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/runs/full_j4_tiny",
+    "--policy",
+    "closed",
+    "--tile-j",
+    "4",
+    "--batch-target",
+    "1",
+    "--timeout-cycles",
+    "0",
+    "--memory-latency",
+    "2",
+    "--max-cycles",
+    "10000000",
+    "--poll-cycles",
+    "64",
+    "--decision-cycles",
+    "16",
+    "--issue-cycles",
+    "1",
+    "--sink-cycles",
+    "64",
+    "--c1-group-panels",
+    "14"
+  ],
+  "package": {
+    "files": 192,
+    "bytes": 22605904,
+    "source_manifest_sha256": "153c1428c14623fe9f18798ea9137ab161ad39112b473153687e3b69dcc0dece"
+  },
+  "build_manifest_sha256": "74cd0665dff8398a24663862fa5107a2e810727da99ae2da14c50e7f512ef7f2",
+  "binary_sha256": "2c35cedce289e690cec4e16f8dd3ac813225f5a03bcbf37ed61de7640daa3623",
+  "checker_sha256": "45edaa400d724520fb7d1ed51c3fbad2792daa7404444ef3adcf61ea11eaaab7",
+  "raw_tl_sha256": "dedb3b92296a5704ee7fcd5ca8e7d0fdfc530d1baeeb9972a028d231840b480f",
+  "input_files": {
+    "inputs/tiny4/meta.json": "5362a70caceef335a09e6a3849b8b48323b2a50b7407896f9a5cc34f25e373db",
+    "inputs/tiny4/arrivals.csv": "88ddac7a700f393f1f45bbbf900dad5bb5e02ee49c86e9c4bd9ec6715845b499",
+    "inputs/diagnostic_q896_n128_v1/memory.bin": "c23a137dfb049122ffadcf9f7bc79d9989316173b122aed986c0d9a019a03396",
+    "inputs/diagnostic_q896_n128_v1/manifest.json": "e0e781aba066e8daa17bb43703d9f51786747e057d9bd2a7d9bc7356668ff109"
+  },
+  "run_exit": 0,
+  "audit_argv": [
+    "/usr/bin/python3",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/checkers/closed_full/check_v2.py",
+    "--input-dir",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/source/inputs/diagnostic_q896_n128_v1",
+    "--run-dir",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/runs/full_j4_tiny",
+    "--queries",
+    "4",
+    "--out",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/repro_v6_check_v1/runs/full_j4_tiny/audit.json"
+  ],
+  "audit_exit": 0,
+  "audit_status": "pass",
+  "postrun_source_verification": {
+    "files": 192,
+    "bytes": 22605904,
+    "source_manifest_sha256": "153c1428c14623fe9f18798ea9137ab161ad39112b473153687e3b69dcc0dece"
+  },
+  "binary_unchanged": true,
+  "checker_unchanged": true,
+  "inputs_unchanged": true,
+  "outputs": {
+    "audit.json": {
+      "bytes": 3954,
+      "sha256": "845f36a4cd457f1c21e18c371c99f0f0924fbaecf062b7a6e02b1998e7b652ba"
+    },
+    "query_a2_outputs.bin": {
+      "bytes": 3584,
+      "sha256": "d3df689e4535521c3aefb5b2891e3736844468e6a19f0faeb164c38b477a3337"
+    },
+    "result.json": {
+      "bytes": 1534,
+      "sha256": "ad28816aee5b40d66fdf22d56e13b76633b1d1fc86bf86952afc9a5493bda532"
+    },
+    "query_outputs.bin": {
+      "bytes": 14336,
+      "sha256": "a7381c6c44037a33d7995d9a12c1142f9278663e5649c67f5c4740612ce1364d"
+    },
+    "actual_memory.bin": {
+      "bytes": 16777216,
+      "sha256": "75e2fabbda0bf8b5a1c415ff691269c5ee496e19f44a8be5b8ae9a9c4540dfc5"
+    },
+    "query_results.json": {
+      "bytes": 672,
+      "sha256": "51f4c91a653173b4dafc8e49d8c34cad297c06bb07c6e8b04c7bd7204bd7f403"
+    },
+    "audit.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "engine_events.jsonl": {
+      "bytes": 88245505,
+      "sha256": "7b2a7147ab6cc71bb4ea3c75a66c970c5502bd42fd16d9d975763c3b0399c609"
+    },
+    "driver_events.jsonl": {
+      "bytes": 337196,
+      "sha256": "624439389461883ea078a0456359ff3ef4ef7c2e0ccfffd0479cc58a6fa67a97"
+    },
+    "query_c2_outputs.bin": {
+      "bytes": 2048,
+      "sha256": "f443421c06b10358577ef58e671ec6cb0ffce2ab7cc282f49e43dcae29be108f"
+    },
+    "audit.stdout.log": {
+      "bytes": 3954,
+      "sha256": "845f36a4cd457f1c21e18c371c99f0f0924fbaecf062b7a6e02b1998e7b652ba"
+    },
+    "query_times.csv": {
+      "bytes": 117,
+      "sha256": "f31fb444697f36040ad8d39088f7c967a76c6ad015e00bb30de6aa8af160e5ae"
+    },
+    "runtime_config.json": {
+      "bytes": 453,
+      "sha256": "949a6c35016a69bb52f9fb2f31c65e8e8407637bc3b4087527afb1f672504a6c"
+    },
+    "preregistration.json": {
+      "bytes": 2191,
+      "sha256": "96c744db927bba1a0a469dbc86765d33750b90310a430c301452ef5aa043c799"
+    }
+  }
+}

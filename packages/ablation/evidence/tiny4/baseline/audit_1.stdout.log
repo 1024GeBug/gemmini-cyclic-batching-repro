@@ -1,0 +1,4 @@
+{
+  "status": "fail",
+  "detail": "AuditError: baseline overwrite trigger not exercised"
+}

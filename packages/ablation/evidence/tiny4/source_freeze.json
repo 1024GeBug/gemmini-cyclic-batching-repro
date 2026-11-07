@@ -1,0 +1,60 @@
+{
+  "origin": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/builds/controller_v2_tiny02",
+  "origin_manifest_sha256": "832891d7b6ab6914ecbafe7d9d4c7a4b8231f82e4078c635464f07365e22a617",
+  "base_source": {
+    "driver.cpp": "4d86d143dc555575e78e005c8e739488a64255631f111ab64ec6d4eb628355d5",
+    "driver_main.hpp": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586",
+    "engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+    "engine/verilated_engine.cpp": "2302eb94fed47de3df1ba1e9d55e25d3bfbdd6fcc72d3fe883c4988733576b40",
+    "engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+    "online_main.cpp": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+  },
+  "baseline_source": {
+    "driver.cpp": "4d86d143dc555575e78e005c8e739488a64255631f111ab64ec6d4eb628355d5",
+    "driver_main.hpp": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586",
+    "engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+    "engine/verilated_engine.cpp": "81deb1e74f7b55ac2777337d780ea01dd871387da04f5d095ece40c35bd0a97c",
+    "engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+    "online_main.cpp": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+  },
+  "variant_source": {
+    "driver.cpp": "ca7435f919b682670293057c249f6a48d168689271a14c5352798b299991f0fd",
+    "driver_main.hpp": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586",
+    "engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+    "engine/verilated_engine.cpp": "81deb1e74f7b55ac2777337d780ea01dd871387da04f5d095ece40c35bd0a97c",
+    "engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+    "online_main.cpp": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+  },
+  "audit": {
+    "ONLINE_AUDIT_PROTOCOL.md": "2a94e689e1918a615a5a0a821060d1fb0844dc3df0971cadeda170ad1c868636",
+    "__pycache__/audit_source.cpython-310.pyc": "ce2a05eebcfa11da5ed690b9b8e8f2bcc81ddb03956bf74450ee017e87c3aa06",
+    "__pycache__/check_v2.cpython-310.pyc": "d5a35ad9856f0ad48a2ce841ef6caa143dd0567fc6bb5df23292c4e10eec9683",
+    "__pycache__/diagnostic_input_reference.cpython-310.pyc": "5b9da0566bf34007c406d12af474c5b4fc1c89179715fbb7ddc6138230859111",
+    "__pycache__/online_audit.cpython-310.pyc": "5bb7f84aeae818180fea40f6e445897b2fa467c0787839420a24d8e1c076b14d",
+    "__pycache__/quantization_reference.cpython-310.pyc": "6081223cdee40cf4a23be9e28ef94c070962710a24ce3dab1783c2e22ab6361c",
+    "__pycache__/raw_tl.cpython-310.pyc": "28f569f480adb8db96fb70087a5002eb715c485575a4b53014a37ca87e88eb03",
+    "__pycache__/response_rules.cpython-310.pyc": "4de1fca4256a3bddbaddd37699eaa9c69535dcb7c1462b068a5ebac048023d66",
+    "audit_source.py": "7b244a983d045e665f293699b8d288d1f61daf3b4aa6a53cd41879c336078348",
+    "check_v2.py": "295dc3d451f56dc8702f4712068afd3b7400e706e90589a0155af103f40b6763",
+    "diagnostic_input_reference.py": "93266898a2017b12c94fa2e32f01b09122ba311c10c6332273eb1866d976871c",
+    "exercise_v2_wire.py": "9d734738b57adc52f3d995e489788713f7affb724c34fd891a8d9cb69d294377",
+    "online_audit.py": "783cb620f7abc88b099155c71179bc352a5e2e5649edba0a4f7047682fd24160",
+    "quantization_reference.py": "a98e573960962277d06505eea7e9bb2e3ab31ad12a1ffc36abd14ff2fa7caf31",
+    "raw_tl.py": "dedb3b92296a5704ee7fcd5ca8e7d0fdfc530d1baeeb9972a028d231840b480f",
+    "response_rules.py": "09909ed45d1ac55187e865ea1b7e59038c1c17431edd45ae47870d86904207f9",
+    "source_audit_current.json": "ca51cb6ec474e996013058acc5fdc1d80bff4ea1708aee061b405890c82c2e98",
+    "test_v2_guards.py": "27eb3eb79592dd152ffd7c9a83b9a677ce9547a8a0be155b7bc7df11840c1ec7",
+    "test_v2_online_faults.py": "ac7c4616f57f0f3594075a795079789dc2166f63994b53c29f1d25f9ce6ce650",
+    "v2_legacy_rejection.json": "cd48efb9c93ad7168a9ace6796cef68f6ae1b54fe9cc8226c84a96f8947505b0"
+  },
+  "tiny_inputs": {
+    "arrivals.csv": "88ddac7a700f393f1f45bbbf900dad5bb5e02ee49c86e9c4bd9ec6715845b499",
+    "meta.json": "5362a70caceef335a09e6a3849b8b48323b2a50b7407896f9a5cc34f25e373db"
+  },
+  "patches": {
+    "observer.patch": "79fd356e0dbc344c66ca795913568463b90fcb0ac2eb34e208e43f51206c64da",
+    "retention.patch": "335c96140df922208ebbb3d10bce0128d3f52b400bccef874f474f0944620fd6",
+    "checker.patch": "cc1351cea1a96d83fa18d29e0ae97c5adbe61463db9155fd0d98aba827e3a1ec"
+  },
+  "scope": "two observer-matched four-request tiny arms only; controller-only model reuse; no performance sweep"
+}

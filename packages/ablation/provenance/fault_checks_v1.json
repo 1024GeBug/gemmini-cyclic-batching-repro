@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "tests": [
+    {
+      "fault": "A1_snapshot_corruption",
+      "edits": [
+        "flip first byte of q3 slot0 after vulnerable consumer"
+      ],
+      "rejected": true,
+      "reason": "AuditError: retention A1 changed across consumer"
+    },
+    {
+      "fault": "protected_A1_write",
+      "edits": [
+        "inject physical bank0 row0 write during vulnerable consumer"
+      ],
+      "rejected": true,
+      "reason": "AuditError: L2 SRAM write outside selected A / auto B"
+    },
+    {
+      "fault": "L2_A_ID_wrong",
+      "edits": [
+        "set accepted L2 A id1"
+      ],
+      "rejected": true,
+      "reason": "AuditError: accepted A/B ID differs"
+    },
+    {
+      "fault": "resume_stride_wrong",
+      "edits": [
+        "change accepted resume LD stride"
+      ],
+      "rejected": true,
+      "reason": "AuditError: resume C1 config differs from initial"
+    },
+    {
+      "fault": "final_snapshot_missing",
+      "edits": [
+        "remove exact final real-response SRAM snapshot"
+      ],
+      "rejected": true,
+      "reason": "AuditError: missing exact final real-response SRAM snapshot"
+    }
+  ],
+  "inputs_unchanged": true,
+  "script_sha256": "9047b21021260ba5f847ba25c6a5921ece02a70c082082ef9507f183dc634126",
+  "preregistration_sha256": "6487408ca51cca11b25c1bda8a2a3a37bfb628caf3691c461e0c30efbb46bbc0"
+}

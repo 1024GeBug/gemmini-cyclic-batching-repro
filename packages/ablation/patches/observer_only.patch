@@ -1,0 +1,44 @@
+--- a/source/engine/verilated_engine.cpp
++++ b/source/engine/verilated_engine.cpp
+@@ -310,6 +310,23 @@
+             throw std::runtime_error("RoCC response changed while valid&&!ready");
+         rocc_held = rocc_valid && !top.io_resp_ready;
+         if(rocc_held) {held_rd=rocc_rd; held_response=rocc_data;}
++        // Observer only: sample the single-port SRAM write address before the edge.
++        if(!top.reset && top.rootp->Gemmini__DOT__spad__DOT__spad_mems_0__DOT____Vcellinp__mem_ext__RW0_en && !top.rootp->Gemmini__DOT__spad__DOT__spad_mems_0__DOT__ren) {
++            log("observer_spad_write", ",\"bank\":0,\"row\":"+std::to_string(top.rootp->Gemmini__DOT__spad__DOT__spad_mems_0__DOT____Vcellinp__mem_ext__RW0_addr)
++              +",\"mask\":"+std::to_string(top.rootp->Gemmini__DOT__spad__DOT__spad_mems_0__DOT____Vcellinp__mem_ext__RW0_wmask)+",\"used_for_control\":false");
++        }
++        if(!top.reset && top.rootp->Gemmini__DOT__spad__DOT__spad_mems_1__DOT____Vcellinp__mem_ext__RW0_en && !top.rootp->Gemmini__DOT__spad__DOT__spad_mems_1__DOT__ren) {
++            log("observer_spad_write", ",\"bank\":1,\"row\":"+std::to_string(top.rootp->Gemmini__DOT__spad__DOT__spad_mems_1__DOT____Vcellinp__mem_ext__RW0_addr)
++              +",\"mask\":"+std::to_string(top.rootp->Gemmini__DOT__spad__DOT__spad_mems_1__DOT____Vcellinp__mem_ext__RW0_wmask)+",\"used_for_control\":false");
++        }
++        if(!top.reset && top.rootp->Gemmini__DOT__spad__DOT__spad_mems_2__DOT____Vcellinp__mem_ext__RW0_en && !top.rootp->Gemmini__DOT__spad__DOT__spad_mems_2__DOT__ren) {
++            log("observer_spad_write", ",\"bank\":2,\"row\":"+std::to_string(top.rootp->Gemmini__DOT__spad__DOT__spad_mems_2__DOT____Vcellinp__mem_ext__RW0_addr)
++              +",\"mask\":"+std::to_string(top.rootp->Gemmini__DOT__spad__DOT__spad_mems_2__DOT____Vcellinp__mem_ext__RW0_wmask)+",\"used_for_control\":false");
++        }
++        if(!top.reset && top.rootp->Gemmini__DOT__spad__DOT__spad_mems_3__DOT____Vcellinp__mem_ext__RW0_en && !top.rootp->Gemmini__DOT__spad__DOT__spad_mems_3__DOT__ren) {
++            log("observer_spad_write", ",\"bank\":3,\"row\":"+std::to_string(top.rootp->Gemmini__DOT__spad__DOT__spad_mems_3__DOT____Vcellinp__mem_ext__RW0_addr)
++              +",\"mask\":"+std::to_string(top.rootp->Gemmini__DOT__spad__DOT__spad_mems_3__DOT____Vcellinp__mem_ext__RW0_wmask)+",\"used_for_control\":false");
++        }
+         const uint32_t observer_wdma = top.rootp->Gemmini__DOT__spad__DOT__writer__DOT__total_bytes_sent;
+         const uint64_t observer_counter_data = top.rootp->Gemmini__DOT__counters__DOT___counterfile_io_data;
+         if(!top.reset && observer_wdma!=observer_wdma_previous) {
+@@ -381,6 +398,17 @@
+             DeviceStatus status; status.cycle=cycles; status.busy=sampled_io_busy;
+             log("device_status_sample", ",\"busy\":"+std::string(status.busy?"true":"false"));
+             controller.on_device_status(status);
++        }
++        if(rocc_fire) {
++            // Read-only bytes of the physical A1 envelope, after this edge.
++            std::ostringstream snapshot;
++            snapshot << std::hex << std::setfill('0');
++            for(unsigned row=0;row<896;row++) for(unsigned byte=0;byte<16;byte++) {
++                const auto& data=top.rootp->Gemmini__DOT__spad__DOT__spad_mems_0__DOT__mem_ext__DOT__Memory[row];
++                snapshot << std::setw(2) << ((data[byte/4] >> ((byte%4)*8)) & 255u);
++            }
++            log("observer_a1_snapshot", ",\"counter_tag\":"+std::to_string(response_commands.front().tag)
++              +",\"begin_row\":0,\"rows\":896,\"hex\":\""+snapshot.str()+"\",\"used_for_control\":false");
+         }
+         if(rocc_fire) notify_rocc_response(rocc_rd,rocc_data);
+         if (d_fire) {

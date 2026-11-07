@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "C:\\Users\\JiapengGuan\\Documents\\Codex\\2026-11-03\\https-mp-weixin-qq-com-s\\work\\figures\\comparison_v6\\comparison_v6.pdf",
+      "format": "pdf",
+      "exists": true,
+      "sha256": "389d49705f31dd14f0ee032b7da0128c09f488a20b235623cc217ab7e6d28890",
+      "byte_size": 45085,
+      "width_px": null,
+      "height_px": null,
+      "pixel_variance": null,
+      "svg_text_present": null,
+      "baseline_status": "NOT_RUN",
+      "notes": []
+    },
+    {
+      "path": "C:\\Users\\JiapengGuan\\Documents\\Codex\\2026-11-03\\https-mp-weixin-qq-com-s\\work\\figures\\comparison_v6\\comparison_v6.svg",
+      "format": "svg",
+      "exists": true,
+      "sha256": "d95f4091475b1b6c3873aa22014acb4506e60dcefa0bef3c109b72d030bcb90c",
+      "byte_size": 31425,
+      "width_px": null,
+      "height_px": null,
+      "pixel_variance": null,
+      "svg_text_present": true,
+      "baseline_status": "NOT_RUN",
+      "notes": []
+    },
+    {
+      "path": "C:\\Users\\JiapengGuan\\Documents\\Codex\\2026-11-03\\https-mp-weixin-qq-com-s\\work\\figures\\comparison_v6\\comparison_v6.png",
+      "format": "png",
+      "exists": true,
+      "sha256": "d07f6bc0105e1bc7b30d202913b8c0882e530906de2d150679ce2fc84ed6609d",
+      "byte_size": 129054,
+      "width_px": 2125,
+      "height_px": 803,
+      "pixel_variance": 2562.8195262958143,
+      "svg_text_present": null,
+      "baseline_status": "NOT_RUN",
+      "notes": []
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

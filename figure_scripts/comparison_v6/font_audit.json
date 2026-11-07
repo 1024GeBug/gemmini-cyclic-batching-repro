@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "fonts": [
+    {
+      "font": "/ELUGPM+ArialMT",
+      "embedded": true,
+      "subtype": "/CIDFontType2"
+    },
+    {
+      "font": "/ELUGPM+Arial-BoldMT",
+      "embedded": true,
+      "subtype": "/CIDFontType2"
+    },
+    {
+      "font": "/DABZEG+SimHei",
+      "embedded": true,
+      "subtype": "/CIDFontType2"
+    }
+  ],
+  "pdf_sha256": "389d49705f31dd14f0ee032b7da0128c09f488a20b235623cc217ab7e6d28890"
+}

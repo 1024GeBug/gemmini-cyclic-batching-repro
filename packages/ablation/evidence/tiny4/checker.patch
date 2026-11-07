@@ -1,0 +1,24 @@
+--- /mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/online_runtime/audit/check_v2.py
++++ /mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/audit/check_v2.py
+@@ -348,7 +348,7 @@
+     def __init__(self, controller, history, starts, config):
+         self.records, self.covered, self.payload = {}, {}, Counter()
+         cohorts = unique_by(controller, "cohort_start", "cohort")
+-        allowed_names = {"admit_inputs", "c1_group", "consumer_reload", "consumer_a2", "consumer_l2", "restore_inputs"}
++        allowed_names = {"admit_inputs", "c1_group", "consumer_reload", "consumer_a2", "consumer_l2", "restore_inputs", "resume_c1_config"}
+         for sid, stage in starts.items():
+             name, cycle = stage["name"], stage["cycle"]
+             require(name in allowed_names, "unregistered device stage kind")
+@@ -360,6 +360,12 @@
+                 record["queries"] = matches[0]["queries"]
+                 require(matches[0]["live_inputs"] == len(record["queries"]) and record["queries"], "input stage row shape")
+                 record["ranges"] = [(REGIONS["a1"][0] + q * 896, 896) for q in record["queries"]]
++                expected_write = 0
++            elif name == "resume_c1_config":
++                matches = [e for e in controller if e["event"] == "resume_c1_config_start" and e["cycle"] == cycle]
++                require(len(matches) == 1 and matches[0]["queries"] and
++                        len(matches[0]["queries"]) == matches[0]["live_inputs"], "missing retained A1 config plan")
++                record["queries"] = matches[0]["queries"]
+                 expected_write = 0
+             elif name == "c1_group":
+                 matches = [e for e in controller if e["event"] == "c1_group_plan" and e["cycle"] == cycle]

@@ -1,0 +1,122 @@
+{
+  "status": "pass",
+  "scope": "independent online functional/protocol diagnostic; no held-out performance inference",
+  "queries": 4,
+  "wire": {
+    "tl_a": 34000,
+    "transactions": 33112,
+    "get_payload_bytes": 2085888,
+    "max_live_sources": 15,
+    "tl_d": 130888,
+    "put_payload_bytes": 22528,
+    "put_acks": 520,
+    "accepted_commands": 897,
+    "arrivals": 4,
+    "drained_cycle": 212726
+  },
+  "commands": {
+    "accepted": 897,
+    "pending_samples": 2253,
+    "held_command_cycles": 1356,
+    "real_responses": 68,
+    "held_response_cycles": 0
+  },
+  "historical_outputs": {
+    "c1": {
+      "bytes": 14336,
+      "sha256": "a7381c6c44037a33d7995d9a12c1142f9278663e5649c67f5c4740612ce1364d",
+      "exactly_once_value_and_ack": true
+    },
+    "a2": {
+      "bytes": 3584,
+      "sha256": "d3df689e4535521c3aefb5b2891e3736844468e6a19f0faeb164c38b477a3337",
+      "exactly_once_value_and_ack": true
+    },
+    "c2": {
+      "bytes": 2048,
+      "sha256": "f443421c06b10358577ef58e671ec6cb0ffce2ab7cc282f49e43dcae29be108f",
+      "exactly_once_value_and_ack": true
+    }
+  },
+  "stage_input_dependencies": {
+    "stages": 33,
+    "all_expected_input_bytes_read": true,
+    "get_payload_bytes": 2085888
+  },
+  "full_memory_bytes_equal": 16777216,
+  "actual_busy_samples": 212706,
+  "sealed_stages": 33,
+  "cpu_modeled_cycles": {
+    "counter_poll": 4160,
+    "decision": 288,
+    "delivery": 256,
+    "issue": 897,
+    "metadata": 1696,
+    "poll": 1152,
+    "response_decision": 1088,
+    "status_decision": 528,
+    "status_poll": 2112
+  },
+  "resources": {
+    "max_input_slots": 3,
+    "max_panel_credits": 2,
+    "c1_generation_allocations": 2,
+    "c1_buffer_reuse_exercised": false,
+    "slot_reuse_exercised": true,
+    "rotated_admission_exercised": true,
+    "consumer_cohorts": 4
+  },
+  "query_results": [
+    {
+      "query": 0,
+      "arrival": 0,
+      "admitted": 237,
+      "c1_notified": 78768,
+      "consumer_start": 78928,
+      "a2_sealed": 79829,
+      "c2_notified": 91445,
+      "delivery_end": 91509,
+      "panel_count": 14
+    },
+    {
+      "query": 1,
+      "arrival": 7180,
+      "admitted": 11614,
+      "c1_notified": 103143,
+      "consumer_start": 103303,
+      "a2_sealed": 104204,
+      "c2_notified": 117719,
+      "delivery_end": 117783,
+      "panel_count": 14
+    },
+    {
+      "query": 2,
+      "arrival": 66788,
+      "admitted": 67535,
+      "c1_notified": 173756,
+      "consumer_start": 173916,
+      "a2_sealed": 174817,
+      "c2_notified": 186449,
+      "delivery_end": 186513,
+      "panel_count": 14
+    },
+    {
+      "query": 3,
+      "arrival": 75320,
+      "admitted": 91910,
+      "c1_notified": 197926,
+      "consumer_start": 198086,
+      "a2_sealed": 198987,
+      "c2_notified": 212518,
+      "delivery_end": 212582,
+      "panel_count": 14
+    }
+  ],
+  "hashes": {
+    "checker": "295dc3d451f56dc8702f4712068afd3b7400e706e90589a0155af103f40b6763",
+    "fixture_manifest": "e0e781aba066e8daa17bb43703d9f51786747e057d9bd2a7d9bc7356668ff109",
+    "engine_events": "c9648841049b2a97dd38741742ad4816ce845dac42ccedeb7f97a5aa29e1d130",
+    "driver_events": "5416a2aa781477567940c9dc330cc9bc41615494c654444dca14422e3c9ca142",
+    "actual_memory": "fb0e351506e5e23b50d5e2e5c2abe0154065685c9202c5c14d91cef699499095"
+  }
+}

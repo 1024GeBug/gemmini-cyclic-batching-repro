@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "same_row_axes_top_bottom_equal": true,
+  "color_identity": "five phases in panel a; panel b uses neutral sign position/marker fill",
+  "scale_policy": "panel a starts at zero; panel b is signed difference with zero reference",
+  "tiny_intervals": "no minimum-width inflation; cohort/delivery retain true linear widths"
+}

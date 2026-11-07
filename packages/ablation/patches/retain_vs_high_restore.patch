@@ -1,0 +1,16 @@
+--- a/source/driver.cpp
++++ b/source/driver.cpp
+@@ -344,7 +344,12 @@
+     },[this,ids,cid]{metadata("cohort_release",[this,ids,cid]{log->event(now,"cohort_release",{{"cohort",num(cid)},{"generation",num(cid+1)},{"queries",nums(ids)}});
+         for(auto id:ids)log->event(now,"query_release",{{"query",num(id)}});
+       });
+-      metadata("restore_plan",[this]{auto ids=live();log->event(now,"restore_plan",{{"queries",nums(ids)},{"live_inputs",num(ids.size())}});load_inputs(ids,true);});
++      metadata("restore_plan",[this]{auto ids=live();
++        log->event(now,"retention_plan",{{"queries",nums(ids)},{"live_inputs",num(ids.size())},{"a_spad_id",num(2)},{"a1_reloaded","false"}});
++        if(!ids.empty()) {auto xs=make([&]{config_c1();});
++          log->event(now,"resume_c1_config_start",{{"queries",nums(ids)},{"live_inputs",num(ids.size())}});
++          stage("resume_c1_config",std::move(xs),0);}
++      });
+     });
+   }
+   CommandResult tick(Cycle c,const EventLedger&) override {

@@ -1,0 +1,16 @@
+{
+  "time_unix": 1793791386.0233583,
+  "scope": "offline evidence mutation only; no simulation or source edit",
+  "frozen": {
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_retention_v1/engine_events.jsonl": "c9648841049b2a97dd38741742ad4816ce845dac42ccedeb7f97a5aa29e1d130",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_retention_v1/driver_events.jsonl": "5416a2aa781477567940c9dc330cc9bc41615494c654444dca14422e3c9ca142",
+    "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/consumer_gate/a_retention_v1/audit/check_retention_v2.py": "3760c681d57870225293df5c0feee74f00574a1d5360a6dd65c908493c73db85"
+  },
+  "faults": [
+    "A1_snapshot_corruption",
+    "protected_A1_write",
+    "L2_A_ID_wrong",
+    "resume_stride_wrong",
+    "final_snapshot_missing"
+  ]
+}

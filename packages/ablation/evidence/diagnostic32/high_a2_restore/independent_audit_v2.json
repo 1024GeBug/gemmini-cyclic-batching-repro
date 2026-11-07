@@ -1,0 +1,430 @@
+{
+  "status": "pass",
+  "scope": "independent online functional/protocol diagnostic; no held-out performance inference",
+  "queries": 32,
+  "wire": {
+    "tl_a": 270556,
+    "transactions": 263548,
+    "get_payload_bytes": 16602880,
+    "max_live_sources": 15,
+    "tl_d": 1041808,
+    "put_payload_bytes": 178176,
+    "put_acks": 4128,
+    "accepted_commands": 7604,
+    "arrivals": 32,
+    "drained_cycle": 1862283
+  },
+  "commands": {
+    "accepted": 7604,
+    "pending_samples": 20211,
+    "held_command_cycles": 12607,
+    "real_responses": 526,
+    "held_response_cycles": 0
+  },
+  "historical_outputs": {
+    "c1": {
+      "bytes": 114688,
+      "sha256": "b1104d48f701625dd5462e76b395a94decf3520b2e6b4128831da4a19ea6c0fd",
+      "exactly_once_value_and_ack": true
+    },
+    "a2": {
+      "bytes": 28672,
+      "sha256": "97c48d9b98a622fd4af2f862f97ec12856fbd31ea5cdd68684c8d3ef8c270897",
+      "exactly_once_value_and_ack": true
+    },
+    "c2": {
+      "bytes": 16384,
+      "sha256": "51f964342b8ed31c27dd0ba50d358632f550d2bb0891a05df87320ea5090afca",
+      "exactly_once_value_and_ack": true
+    }
+  },
+  "stage_input_dependencies": {
+    "stages": 252,
+    "all_expected_input_bytes_read": true,
+    "get_payload_bytes": 16602880
+  },
+  "full_memory_bytes_equal": 16777216,
+  "actual_busy_samples": 1862263,
+  "sealed_stages": 252,
+  "cpu_modeled_cycles": {
+    "counter_poll": 33472,
+    "decision": 31648,
+    "delivery": 2048,
+    "issue": 7604,
+    "metadata": 42944,
+    "poll": 126592,
+    "response_decision": 8416,
+    "status_decision": 4032,
+    "status_poll": 16128
+  },
+  "resources": {
+    "max_input_slots": 4,
+    "max_panel_credits": 2,
+    "c1_generation_allocations": 17,
+    "c1_buffer_reuse_exercised": true,
+    "slot_reuse_exercised": true,
+    "rotated_admission_exercised": true,
+    "consumer_cohorts": 29
+  },
+  "query_results": [
+    {
+      "query": 0,
+      "arrival": 0,
+      "admitted": 237,
+      "c1_notified": 78768,
+      "consumer_start": 78928,
+      "a2_sealed": 79829,
+      "c2_notified": 91445,
+      "delivery_end": 91509,
+      "panel_count": 14
+    },
+    {
+      "query": 1,
+      "arrival": 7180,
+      "admitted": 11614,
+      "c1_notified": 103286,
+      "consumer_start": 103446,
+      "a2_sealed": 104347,
+      "c2_notified": 117862,
+      "delivery_end": 117926,
+      "panel_count": 14
+    },
+    {
+      "query": 2,
+      "arrival": 66788,
+      "admitted": 67535,
+      "c1_notified": 174042,
+      "consumer_start": 174202,
+      "a2_sealed": 175103,
+      "c2_notified": 186735,
+      "delivery_end": 186799,
+      "panel_count": 14
+    },
+    {
+      "query": 3,
+      "arrival": 75320,
+      "admitted": 92053,
+      "c1_notified": 198608,
+      "consumer_start": 198768,
+      "a2_sealed": 199669,
+      "c2_notified": 213184,
+      "delivery_end": 213248,
+      "panel_count": 14
+    },
+    {
+      "query": 4,
+      "arrival": 171849,
+      "admitted": 187244,
+      "c1_notified": 281223,
+      "consumer_start": 281415,
+      "a2_sealed": 283044,
+      "c2_notified": 294701,
+      "delivery_end": 294765,
+      "panel_count": 14
+    },
+    {
+      "query": 5,
+      "arrival": 177239,
+      "admitted": 187260,
+      "c1_notified": 281239,
+      "consumer_start": 281415,
+      "a2_sealed": 283044,
+      "c2_notified": 294701,
+      "delivery_end": 294829,
+      "panel_count": 14
+    },
+    {
+      "query": 6,
+      "arrival": 226964,
+      "admitted": 236088,
+      "c1_notified": 328926,
+      "consumer_start": 329086,
+      "a2_sealed": 329987,
+      "c2_notified": 343502,
+      "delivery_end": 343566,
+      "panel_count": 14
+    },
+    {
+      "query": 7,
+      "arrival": 236664,
+      "admitted": 247449,
+      "c1_notified": 355331,
+      "consumer_start": 355491,
+      "a2_sealed": 356392,
+      "c2_notified": 368024,
+      "delivery_end": 368088,
+      "panel_count": 14
+    },
+    {
+      "query": 8,
+      "arrival": 342206,
+      "admitted": 344011,
+      "c1_notified": 435671,
+      "consumer_start": 435831,
+      "a2_sealed": 436732,
+      "c2_notified": 450247,
+      "delivery_end": 450311,
+      "panel_count": 14
+    },
+    {
+      "query": 9,
+      "arrival": 351938,
+      "admitted": 368517,
+      "c1_notified": 461867,
+      "consumer_start": 462027,
+      "a2_sealed": 462928,
+      "c2_notified": 474560,
+      "delivery_end": 474624,
+      "panel_count": 14
+    },
+    {
+      "query": 10,
+      "arrival": 408585,
+      "admitted": 413298,
+      "c1_notified": 519722,
+      "consumer_start": 519882,
+      "a2_sealed": 520783,
+      "c2_notified": 534298,
+      "delivery_end": 534362,
+      "panel_count": 14
+    },
+    {
+      "query": 11,
+      "arrival": 480372,
+      "admitted": 486209,
+      "c1_notified": 579444,
+      "consumer_start": 579604,
+      "a2_sealed": 580505,
+      "c2_notified": 592137,
+      "delivery_end": 592201,
+      "panel_count": 14
+    },
+    {
+      "query": 12,
+      "arrival": 512108,
+      "admitted": 534791,
+      "c1_notified": 626598,
+      "consumer_start": 626758,
+      "a2_sealed": 627659,
+      "c2_notified": 641174,
+      "delivery_end": 641238,
+      "panel_count": 14
+    },
+    {
+      "query": 13,
+      "arrival": 593301,
+      "admitted": 603786,
+      "c1_notified": 698150,
+      "consumer_start": 698310,
+      "a2_sealed": 699211,
+      "c2_notified": 710827,
+      "delivery_end": 710891,
+      "panel_count": 14
+    },
+    {
+      "query": 14,
+      "arrival": 603925,
+      "admitted": 615147,
+      "c1_notified": 722674,
+      "consumer_start": 722866,
+      "a2_sealed": 724495,
+      "c2_notified": 738099,
+      "delivery_end": 738163,
+      "panel_count": 14
+    },
+    {
+      "query": 15,
+      "arrival": 605334,
+      "admitted": 615163,
+      "c1_notified": 722690,
+      "consumer_start": 722866,
+      "a2_sealed": 724495,
+      "c2_notified": 738099,
+      "delivery_end": 738227,
+      "panel_count": 14
+    },
+    {
+      "query": 16,
+      "arrival": 621612,
+      "admitted": 641922,
+      "c1_notified": 749668,
+      "consumer_start": 749828,
+      "a2_sealed": 750729,
+      "c2_notified": 762361,
+      "delivery_end": 762425,
+      "panel_count": 14
+    },
+    {
+      "query": 17,
+      "arrival": 780205,
+      "admitted": 780329,
+      "c1_notified": 858402,
+      "consumer_start": 858562,
+      "a2_sealed": 859463,
+      "c2_notified": 872994,
+      "delivery_end": 873058,
+      "panel_count": 14
+    },
+    {
+      "query": 18,
+      "arrival": 886948,
+      "admitted": 887026,
+      "c1_notified": 965467,
+      "consumer_start": 965627,
+      "a2_sealed": 966528,
+      "c2_notified": 978144,
+      "delivery_end": 978208,
+      "panel_count": 14
+    },
+    {
+      "query": 19,
+      "arrival": 921565,
+      "admitted": 931823,
+      "c1_notified": 1023405,
+      "consumer_start": 1023597,
+      "a2_sealed": 1025226,
+      "c2_notified": 1038830,
+      "delivery_end": 1038894,
+      "panel_count": 14
+    },
+    {
+      "query": 20,
+      "arrival": 925210,
+      "admitted": 931839,
+      "c1_notified": 1023421,
+      "consumer_start": 1023597,
+      "a2_sealed": 1025226,
+      "c2_notified": 1038830,
+      "delivery_end": 1038958,
+      "panel_count": 14
+    },
+    {
+      "query": 21,
+      "arrival": 968483,
+      "admitted": 978752,
+      "c1_notified": 1072679,
+      "consumer_start": 1072839,
+      "a2_sealed": 1073740,
+      "c2_notified": 1085372,
+      "delivery_end": 1085436,
+      "panel_count": 14
+    },
+    {
+      "query": 22,
+      "arrival": 1131364,
+      "admitted": 1131468,
+      "c1_notified": 1209778,
+      "consumer_start": 1209938,
+      "a2_sealed": 1210839,
+      "c2_notified": 1224354,
+      "delivery_end": 1224418,
+      "panel_count": 14
+    },
+    {
+      "query": 23,
+      "arrival": 1165429,
+      "admitted": 1176265,
+      "c1_notified": 1269279,
+      "consumer_start": 1269439,
+      "a2_sealed": 1270340,
+      "c2_notified": 1281972,
+      "delivery_end": 1282036,
+      "panel_count": 14
+    },
+    {
+      "query": 24,
+      "arrival": 1259011,
+      "admitted": 1282276,
+      "c1_notified": 1360807,
+      "consumer_start": 1360967,
+      "a2_sealed": 1361868,
+      "c2_notified": 1375383,
+      "delivery_end": 1375447,
+      "panel_count": 14
+    },
+    {
+      "query": 25,
+      "arrival": 1283723,
+      "admitted": 1293637,
+      "c1_notified": 1387224,
+      "consumer_start": 1387384,
+      "a2_sealed": 1388285,
+      "c2_notified": 1399917,
+      "delivery_end": 1399981,
+      "panel_count": 14
+    },
+    {
+      "query": 26,
+      "arrival": 1319606,
+      "admitted": 1327294,
+      "c1_notified": 1433817,
+      "consumer_start": 1433977,
+      "a2_sealed": 1434878,
+      "c2_notified": 1448393,
+      "delivery_end": 1448457,
+      "panel_count": 14
+    },
+    {
+      "query": 27,
+      "arrival": 1360833,
+      "admitted": 1375991,
+      "c1_notified": 1482178,
+      "consumer_start": 1482338,
+      "a2_sealed": 1483239,
+      "c2_notified": 1494871,
+      "delivery_end": 1494935,
+      "panel_count": 14
+    },
+    {
+      "query": 28,
+      "arrival": 1568894,
+      "admitted": 1568999,
+      "c1_notified": 1647293,
+      "consumer_start": 1647453,
+      "a2_sealed": 1648354,
+      "c2_notified": 1661869,
+      "delivery_end": 1661933,
+      "panel_count": 14
+    },
+    {
+      "query": 29,
+      "arrival": 1571387,
+      "admitted": 1580360,
+      "c1_notified": 1673374,
+      "consumer_start": 1673534,
+      "a2_sealed": 1674435,
+      "c2_notified": 1686067,
+      "delivery_end": 1686131,
+      "panel_count": 14
+    },
+    {
+      "query": 30,
+      "arrival": 1711394,
+      "admitted": 1711523,
+      "c1_notified": 1789833,
+      "consumer_start": 1789993,
+      "a2_sealed": 1790894,
+      "c2_notified": 1804425,
+      "delivery_end": 1804489,
+      "panel_count": 14
+    },
+    {
+      "query": 31,
+      "arrival": 1749270,
+      "admitted": 1756320,
+      "c1_notified": 1849350,
+      "consumer_start": 1849510,
+      "a2_sealed": 1850411,
+      "c2_notified": 1862043,
+      "delivery_end": 1862107,
+      "panel_count": 14
+    }
+  ],
+  "hashes": {
+    "checker": "295dc3d451f56dc8702f4712068afd3b7400e706e90589a0155af103f40b6763",
+    "fixture_manifest": "e0e781aba066e8daa17bb43703d9f51786747e057d9bd2a7d9bc7356668ff109",
+    "engine_events": "4ffe82174fedd40e4fc8e6e506ff279ec08a6aacee3a4fc96f475424f088ec9d",
+    "driver_events": "364327849471b32da67e714f5100cb313c61044c3796850de6e873e206c69853",
+    "actual_memory": "e38a64b8b7a6d6ea0135c39bd26653817f0a96bafd2cc52a862489efbadfa81e"
+  }
+}

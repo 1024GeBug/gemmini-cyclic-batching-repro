@@ -1,0 +1,41 @@
+{
+  "status": "frozen_inputs_only",
+  "files": {
+    "A1.bin": {
+      "bytes": 28672,
+      "sha256": "c652b13111f0fcd04cf156a845610015f85540abe8f4229de1f09fb9a64367c9"
+    },
+    "arrivals.csv": {
+      "bytes": 1021,
+      "sha256": "e5e3ecee8ec67ba548ae3aa73033b7bf1406924ff7dbf763b942a6c878fae8b4"
+    },
+    "fixture.json": {
+      "bytes": 1731,
+      "sha256": "487c7534068291c8c5f6fbea0d219625dbcafc53dbb72d78fb21aa48e707247e"
+    },
+    "golden_a2.bin": {
+      "bytes": 28672,
+      "sha256": "97c48d9b98a622fd4af2f862f97ec12856fbd31ea5cdd68684c8d3ef8c270897"
+    },
+    "golden_c1.bin": {
+      "bytes": 114688,
+      "sha256": "b1104d48f701625dd5462e76b395a94decf3520b2e6b4128831da4a19ea6c0fd"
+    },
+    "golden_c2.bin": {
+      "bytes": 16384,
+      "sha256": "51f964342b8ed31c27dd0ba50d358632f550d2bb0891a05df87320ea5090afca"
+    },
+    "memory.bin": {
+      "bytes": 16777216,
+      "sha256": "c23a137dfb049122ffadcf9f7bc79d9989316173b122aed986c0d9a019a03396"
+    },
+    "W1.bin": {
+      "bytes": 802816,
+      "sha256": "a87c0988b5ebb8d184a4d66e3a0d3c1af9324d5c7db63be906083f3b3d74e810"
+    },
+    "W2.bin": {
+      "bytes": 114688,
+      "sha256": "fd642cbbc8337747fe464ed5b59f0799a7fb75f75b85640519532d61b85ed48d"
+    }
+  }
+}

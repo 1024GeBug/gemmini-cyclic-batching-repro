@@ -1,0 +1,740 @@
+{
+  "status": "pass",
+  "mode": "retain",
+  "active_A1_retention_triggers": 22,
+  "genuinely_vulnerable_triggers": 10,
+  "genuinely_vulnerable_query_instances": 10,
+  "active_query_instances": 34,
+  "consumer_records": [
+    {
+      "stage": 13,
+      "cycle": 79845,
+      "live_queries": [
+        1,
+        2
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        1,
+        2
+      ],
+      "slot_generations": [
+        1,
+        1
+      ],
+      "start_panels": [
+        2,
+        12
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        1,
+        2
+      ],
+      "later_C1_groups": 6,
+      "cross_scan_queries": [
+        1,
+        2
+      ]
+    },
+    {
+      "stage": 19,
+      "cycle": 104220,
+      "live_queries": [
+        2,
+        3
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        3
+      ],
+      "slots": [
+        2,
+        0
+      ],
+      "slot_generations": [
+        1,
+        2
+      ],
+      "start_panels": [
+        12,
+        14
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        2,
+        3
+      ],
+      "later_C1_groups": 6,
+      "cross_scan_queries": [
+        2
+      ]
+    },
+    {
+      "stage": 28,
+      "cycle": 174849,
+      "live_queries": [
+        3
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        3
+      ],
+      "slots": [
+        0
+      ],
+      "slot_generations": [
+        2
+      ],
+      "start_panels": [
+        14
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        3
+      ],
+      "later_C1_groups": 1,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 34,
+      "cycle": 199371,
+      "live_queries": [
+        4,
+        5
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        1,
+        2
+      ],
+      "slot_generations": [
+        2,
+        2
+      ],
+      "start_panels": [
+        26,
+        26
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        4,
+        5
+      ],
+      "later_C1_groups": 6,
+      "cross_scan_queries": [
+        4,
+        5
+      ]
+    },
+    {
+      "stage": 46,
+      "cycle": 282635,
+      "live_queries": [
+        6,
+        7
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        6
+      ],
+      "slots": [
+        0,
+        3
+      ],
+      "slot_generations": [
+        3,
+        1
+      ],
+      "start_panels": [
+        32,
+        34
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        6,
+        7
+      ],
+      "later_C1_groups": 4,
+      "cross_scan_queries": [
+        6,
+        7
+      ]
+    },
+    {
+      "stage": 53,
+      "cycle": 329403,
+      "live_queries": [
+        7
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        3
+      ],
+      "slot_generations": [
+        1
+      ],
+      "start_panels": [
+        34
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        7
+      ],
+      "later_C1_groups": 1,
+      "cross_scan_queries": [
+        7
+      ]
+    },
+    {
+      "stage": 59,
+      "cycle": 355796,
+      "live_queries": [
+        8
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        8
+      ],
+      "slots": [
+        0
+      ],
+      "slot_generations": [
+        4
+      ],
+      "start_panels": [
+        46
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        8
+      ],
+      "later_C1_groups": 6,
+      "cross_scan_queries": [
+        8
+      ]
+    },
+    {
+      "stage": 71,
+      "cycle": 436092,
+      "live_queries": [
+        9,
+        10
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        1,
+        2
+      ],
+      "slot_generations": [
+        3,
+        3
+      ],
+      "start_panels": [
+        48,
+        56
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        9,
+        10
+      ],
+      "later_C1_groups": 5,
+      "cross_scan_queries": [
+        9
+      ]
+    },
+    {
+      "stage": 76,
+      "cycle": 462161,
+      "live_queries": [
+        10
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        2
+      ],
+      "slot_generations": [
+        3
+      ],
+      "start_panels": [
+        56
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        10
+      ],
+      "later_C1_groups": 4,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 85,
+      "cycle": 519972,
+      "live_queries": [
+        11
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        11
+      ],
+      "slots": [
+        0
+      ],
+      "slot_generations": [
+        5
+      ],
+      "start_panels": [
+        64
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        11
+      ],
+      "later_C1_groups": 4,
+      "cross_scan_queries": [
+        11
+      ]
+    },
+    {
+      "stage": 94,
+      "cycle": 579682,
+      "live_queries": [
+        12
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        1
+      ],
+      "slot_generations": [
+        4
+      ],
+      "start_panels": [
+        70
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        12
+      ],
+      "later_C1_groups": 3,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 103,
+      "cycle": 626792,
+      "live_queries": [
+        13,
+        14,
+        15
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        13
+      ],
+      "slots": [
+        0,
+        2,
+        3
+      ],
+      "slot_generations": [
+        6,
+        4,
+        2
+      ],
+      "start_panels": [
+        80,
+        82,
+        82
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        13,
+        14,
+        15
+      ],
+      "later_C1_groups": 6,
+      "cross_scan_queries": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "stage": 113,
+      "cycle": 698061,
+      "live_queries": [
+        14,
+        15,
+        16
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        2,
+        3,
+        1
+      ],
+      "slot_generations": [
+        4,
+        2,
+        5
+      ],
+      "start_panels": [
+        82,
+        82,
+        84
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        14,
+        15,
+        16
+      ],
+      "later_C1_groups": 2,
+      "cross_scan_queries": [
+        14,
+        15
+      ]
+    },
+    {
+      "stage": 118,
+      "cycle": 723094,
+      "live_queries": [
+        16
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        16
+      ],
+      "slots": [
+        1
+      ],
+      "slot_generations": [
+        5
+      ],
+      "start_panels": [
+        84
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        16
+      ],
+      "later_C1_groups": 1,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 123,
+      "cycle": 749284,
+      "live_queries": [],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [],
+      "slot_generations": [],
+      "start_panels": [],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [],
+      "later_C1_groups": 0,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 134,
+      "cycle": 859458,
+      "live_queries": [],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [],
+      "slot_generations": [],
+      "start_panels": [],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [],
+      "later_C1_groups": 0,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 146,
+      "cycle": 966603,
+      "live_queries": [
+        19,
+        20
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        1,
+        2
+      ],
+      "slot_generations": [
+        6,
+        5
+      ],
+      "start_panels": [
+        120,
+        120
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        19,
+        20
+      ],
+      "later_C1_groups": 4,
+      "cross_scan_queries": [
+        19,
+        20
+      ]
+    },
+    {
+      "stage": 155,
+      "cycle": 1025190,
+      "live_queries": [
+        21
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        21
+      ],
+      "slots": [
+        0
+      ],
+      "slot_generations": [
+        9
+      ],
+      "start_panels": [
+        126
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        21
+      ],
+      "later_C1_groups": 3,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 162,
+      "cycle": 1073660,
+      "live_queries": [],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [],
+      "slot_generations": [],
+      "start_panels": [],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [],
+      "later_C1_groups": 0,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 174,
+      "cycle": 1210839,
+      "live_queries": [
+        23
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        1
+      ],
+      "slot_generations": [
+        7
+      ],
+      "start_panels": [
+        148
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        23
+      ],
+      "later_C1_groups": 4,
+      "cross_scan_queries": [
+        23
+      ]
+    },
+    {
+      "stage": 182,
+      "cycle": 1270328,
+      "live_queries": [],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [],
+      "slot_generations": [],
+      "start_panels": [],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [],
+      "later_C1_groups": 0,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 195,
+      "cycle": 1361840,
+      "live_queries": [
+        25,
+        26
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        1,
+        2
+      ],
+      "slot_generations": [
+        8,
+        6
+      ],
+      "start_panels": [
+        164,
+        170
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        25,
+        26
+      ],
+      "later_C1_groups": 4,
+      "cross_scan_queries": [
+        25,
+        26
+      ]
+    },
+    {
+      "stage": 201,
+      "cycle": 1388130,
+      "live_queries": [
+        26,
+        27
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        27
+      ],
+      "slots": [
+        2,
+        0
+      ],
+      "slot_generations": [
+        6,
+        12
+      ],
+      "start_panels": [
+        170,
+        176
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        26,
+        27
+      ],
+      "later_C1_groups": 6,
+      "cross_scan_queries": [
+        26,
+        27
+      ]
+    },
+    {
+      "stage": 208,
+      "cycle": 1434564,
+      "live_queries": [
+        27
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        27
+      ],
+      "slots": [
+        0
+      ],
+      "slot_generations": [
+        12
+      ],
+      "start_panels": [
+        176
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        27
+      ],
+      "later_C1_groups": 3,
+      "cross_scan_queries": [
+        27
+      ]
+    },
+    {
+      "stage": 215,
+      "cycle": 1482913,
+      "live_queries": [],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [],
+      "slot_generations": [],
+      "start_panels": [],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [],
+      "later_C1_groups": 0,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 227,
+      "cycle": 1648396,
+      "live_queries": [
+        29
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        1
+      ],
+      "slot_generations": [
+        9
+      ],
+      "start_panels": [
+        192
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        29
+      ],
+      "later_C1_groups": 1,
+      "cross_scan_queries": [
+        29
+      ]
+    },
+    {
+      "stage": 232,
+      "cycle": 1674465,
+      "live_queries": [],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [],
+      "slot_generations": [],
+      "start_panels": [],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [],
+      "later_C1_groups": 0,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 244,
+      "cycle": 1790924,
+      "live_queries": [
+        31
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        1
+      ],
+      "slot_generations": [
+        10
+      ],
+      "start_panels": [
+        214
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        31
+      ],
+      "later_C1_groups": 4,
+      "cross_scan_queries": [
+        31
+      ]
+    },
+    {
+      "stage": 252,
+      "cycle": 1850413,
+      "live_queries": [],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [],
+      "slot_generations": [],
+      "start_panels": [],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [],
+      "later_C1_groups": 0,
+      "cross_scan_queries": []
+    }
+  ],
+  "auto_B_halves_exercised": [
+    "high",
+    "low"
+  ],
+  "SRAM_write_events": 1028608,
+  "SRAM_snapshot_count": 526,
+  "resume_config_stages": 22,
+  "restore_input_stages": 0,
+  "slot_reuse": true,
+  "checker_sha256": "bfb2c1922d2ecae138ba52806336742748c7eb6083fe88ec3d2925c6ec7232ac"
+}

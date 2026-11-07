@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "reviewed_artifact": "comparison_v6.pdf",
+  "pdf_sha256": "389d49705f31dd14f0ee032b7da0128c09f488a20b235623cc217ab7e6d28890",
+  "preview": "pdf_preview.png",
+  "preview_sha256": "bc978b3b0290394d273454c527c2c3d4b198496e33859768217146d51857b7a6",
+  "method": "pypdfium2 scale2 rendering and direct visual inspection",
+  "findings": {
+    "legibility": "PASS at18cm width",
+    "clipping": "none",
+    "overlap": "none",
+    "zero_reference": "clear",
+    "scope": "one32-query trace",
+    "interval_semantics": "descriptive wall-clock spans; no pure-L1 or recovery-only attribution"
+  }
+}

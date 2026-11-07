@@ -1,0 +1,49 @@
+{
+  "baseline": {
+    "mean_final_latency": 115910,
+    "cycles_including_reset": 213040,
+    "get_bytes": 2090368,
+    "put_bytes": 22528,
+    "rocc_commands": 967,
+    "stage_durations": {
+      "admit_inputs": 820,
+      "c1_group": 153720,
+      "consumer_reload": 2180,
+      "consumer_a2": 1424,
+      "consumer_l2": 50774,
+      "restore_inputs": 845
+    },
+    "raw_evidence": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_baseline_v1",
+    "raw_files_sha256": {
+      "engine_events.jsonl": "d67b61a751698002d00c1265d677e234b40deb049ce9649aac0b40027c04084b",
+      "driver_events.jsonl": "6283f1460448f0f8d5a45f6b59de749f91c48bf36fbec70bf8e5e5563e51bf7b",
+      "actual_memory.bin": "fb0e351506e5e23b50d5e2e5c2abe0154065685c9202c5c14d91cef699499095"
+    }
+  },
+  "retain": {
+    "mean_final_latency": 114774.75,
+    "cycles_including_reset": 212726,
+    "get_bytes": 2085888,
+    "put_bytes": 22528,
+    "rocc_commands": 897,
+    "stage_durations": {
+      "admit_inputs": 820,
+      "c1_group": 153720,
+      "consumer_reload": 2180,
+      "consumer_a2": 1424,
+      "consumer_l2": 50774,
+      "resume_c1_config": 531
+    },
+    "raw_evidence": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_retention_v1",
+    "raw_files_sha256": {
+      "engine_events.jsonl": "c9648841049b2a97dd38741742ad4816ce845dac42ccedeb7f97a5aa29e1d130",
+      "driver_events.jsonl": "5416a2aa781477567940c9dc330cc9bc41615494c654444dca14422e3c9ca142",
+      "actual_memory.bin": "fb0e351506e5e23b50d5e2e5c2abe0154065685c9202c5c14d91cef699499095"
+    }
+  },
+  "observer_noninterference": {
+    "prior_result_sha256": "da516715287bc84302d3e36e2b3d2f9925f130cd673356ce4ec220e1ad2de28c",
+    "observer_result_sha256": "da516715287bc84302d3e36e2b3d2f9925f130cd673356ce4ec220e1ad2de28c",
+    "all_result_fields_equal": true
+  }
+}

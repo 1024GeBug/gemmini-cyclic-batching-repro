@@ -1,0 +1,123 @@
+{
+  "source_hashes": {
+    "summary.json": "6266e571262e4be521550dec79aa2b04529ed1f33743b8921ece5428b76cf242",
+    "paired_queries.csv": "c9d9565eef0d0d09d4184cc31e008591b7d7ee53d0bbe06074bb9264f76c671c",
+    "policy_summary.csv": "d311ef4aad87e26c2908d75f68f0ff08dd4376acd079de80710301e3705388e7",
+    "manifest.json": "23a34679452c01a190781156eec71119e4d3becfe046cd505e77970ddcc192ac"
+  },
+  "policies": {
+    "on": {
+      "mean_cycles": {
+        "admission_wait": 8311.1875,
+        "c1_span": 93449.75,
+        "cohort_wait": 164.5,
+        "consumer_span": 13620.1875,
+        "delivery_span": 70
+      },
+      "latency_cycles": 115615.625
+    },
+    "off": {
+      "mean_cycles": {
+        "admission_wait": 37401.8125,
+        "c1_span": 78315.625,
+        "cohort_wait": 188.5,
+        "consumer_span": 14349.90625,
+        "delivery_span": 102
+      },
+      "latency_cycles": 130357.84375
+    },
+    "closed_j4_immediate": {
+      "mean_cycles": {
+        "admission_wait": 37224.28125,
+        "c1_span": 78187.125,
+        "cohort_wait": 188.5,
+        "consumer_span": 14349.90625,
+        "delivery_span": 102
+      },
+      "latency_cycles": 130051.8125
+    },
+    "closed_full_j4_immediate": {
+      "mean_cycles": {
+        "admission_wait": 28251.0625,
+        "c1_span": 54536,
+        "cohort_wait": 173.5,
+        "consumer_span": 13855.4375,
+        "delivery_span": 82
+      },
+      "latency_cycles": 96898
+    }
+  },
+  "query_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "on_minus_closed_full_j4_cycles": [
+    24015,
+    -19813,
+    50895,
+    6049,
+    21167,
+    21167,
+    -2288,
+    24069,
+    36896,
+    -7185,
+    50590,
+    42831,
+    20660,
+    11793,
+    37054,
+    37054,
+    4895,
+    23572,
+    23881,
+    14274,
+    14274,
+    -6745,
+    23769,
+    13890,
+    37905,
+    -5955,
+    40558,
+    21438,
+    21909,
+    -19491,
+    21908,
+    13928
+  ],
+  "counts": {
+    "faster": 6,
+    "slower": 26,
+    "tied": 0
+  }
+}

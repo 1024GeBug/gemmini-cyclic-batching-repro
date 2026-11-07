@@ -1,0 +1,57 @@
+{
+  "text_layout_report": {
+    "created_at": "2026-11-04T07:17:09Z",
+    "figure_id": "comparison_v6",
+    "result": "PASS",
+    "terminology_profile_id": null,
+    "colorbar_policy": "right_default_shared_group_when_audited",
+    "text_element_count": 33,
+    "checks": [
+      {
+        "check": "text_element_inventory",
+        "result": "PASS",
+        "new_blockers": 0,
+        "new_warnings": 0
+      },
+      {
+        "check": "text_bounds_and_axis_overflow",
+        "result": "PASS",
+        "new_blockers": 0,
+        "new_warnings": 0
+      },
+      {
+        "check": "text_overlap_and_spacing",
+        "result": "PASS",
+        "new_blockers": 0,
+        "new_warnings": 0
+      },
+      {
+        "check": "font_size_and_rotation",
+        "result": "PASS",
+        "new_blockers": 0,
+        "new_warnings": 0
+      },
+      {
+        "check": "title_and_colorbar_text_policy",
+        "result": "PASS",
+        "new_blockers": 0,
+        "new_warnings": 0
+      },
+      {
+        "check": "direct_label_control",
+        "result": "PASS",
+        "new_blockers": 0,
+        "new_warnings": 0
+      },
+      {
+        "check": "academic_terminology",
+        "result": "PASS",
+        "new_blockers": 0,
+        "new_warnings": 0
+      }
+    ],
+    "blockers": [],
+    "warnings": [],
+    "repairs_suggested": []
+  }
+}

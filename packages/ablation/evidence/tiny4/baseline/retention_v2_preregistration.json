@@ -1,0 +1,11 @@
+{
+  "time": 1793791058.7988956,
+  "scope": "independent v2 re-audit existing unchanged baseline; no new simulation",
+  "checker_sha256": "3760c681d57870225293df5c0feee74f00574a1d5360a6dd65c908493c73db85",
+  "correction_sha256": "aeda4d963257983a1d9a09dc74166b62bca87f9d6dcbafeb3c0540967542b0d6",
+  "inputs": {
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_baseline_v1/engine_events.jsonl": "d67b61a751698002d00c1265d677e234b40deb049ce9649aac0b40027c04084b",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_baseline_v1/driver_events.jsonl": "6283f1460448f0f8d5a45f6b59de749f91c48bf36fbec70bf8e5e5563e51bf7b",
+    "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/tiny4_on_j4_baseline_v1/independent_audit_v2.json": "91b6df2b80bb2564d1fd0e513612cf8dad0b817226129efe57db70d73f98cf3e"
+  }
+}

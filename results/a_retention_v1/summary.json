@@ -1,0 +1,406 @@
+{
+  "status": "audited_fixed_diagnostic",
+  "records": [
+    {
+      "arm": "original_on",
+      "mean_final_latency": 115615.625,
+      "mean_intervals": {
+        "arrival_to_admit": 8311.1875,
+        "admit_to_c1": 93449.75,
+        "c1_to_consumer": 164.5,
+        "consumer_to_a2": 1037.5,
+        "a2_to_delivery": 12652.6875
+      },
+      "last_delivery": 1862134,
+      "cycles_including_reset": 1862310,
+      "get_bytes": 16602880,
+      "put_ack_bytes": 178176,
+      "rocc_commands": 7604,
+      "cohort_sizes": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "cohorts": 29,
+      "restore_stages": 22,
+      "resume_stages": 0,
+      "restore_query_instances": 34,
+      "retention_query_instances": 0,
+      "stage_counts": {
+        "admit_inputs": 29,
+        "c1_group": 114,
+        "consumer_reload": 29,
+        "consumer_a2": 29,
+        "consumer_l2": 29,
+        "restore_inputs": 22
+      },
+      "stage_elapsed_cycles": {
+        "admit_inputs": 6290,
+        "c1_group": 1252938,
+        "consumer_reload": 17317,
+        "consumer_a2": 10996,
+        "consumer_l2": 369328,
+        "restore_inputs": 5940
+      },
+      "paid_CPU_intervals": {
+        "issue": 7604,
+        "response_decision": 8416,
+        "poll": 125376,
+        "decision": 31344,
+        "metadata": 42640,
+        "counter_poll": 33472,
+        "status_poll": 16128,
+        "status_decision": 4032,
+        "delivery": 2048
+      },
+      "run": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/online_runtime/diagnostic_v2_01/on",
+      "audit_sha256": "2f5975daa30919324b15a7c7e4ff6384265558d5db54d331829df071d8b1be26"
+    },
+    {
+      "arm": "high_a2_restore",
+      "mean_final_latency": 116342.28125,
+      "mean_intervals": {
+        "arrival_to_admit": 8797.46875,
+        "admit_to_c1": 93687.125,
+        "c1_to_consumer": 164.5,
+        "consumer_to_a2": 1037.5,
+        "a2_to_delivery": 12655.6875
+      },
+      "last_delivery": 1862107,
+      "cycles_including_reset": 1862283,
+      "get_bytes": 16602880,
+      "put_ack_bytes": 178176,
+      "rocc_commands": 7604,
+      "cohort_sizes": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "cohorts": 29,
+      "restore_stages": 22,
+      "resume_stages": 0,
+      "restore_query_instances": 34,
+      "retention_query_instances": 0,
+      "stage_counts": {
+        "admit_inputs": 29,
+        "c1_group": 114,
+        "consumer_reload": 29,
+        "consumer_a2": 29,
+        "consumer_l2": 29,
+        "restore_inputs": 22
+      },
+      "stage_elapsed_cycles": {
+        "admit_inputs": 6290,
+        "c1_group": 1252938,
+        "consumer_reload": 17317,
+        "consumer_a2": 10996,
+        "consumer_l2": 367477,
+        "restore_inputs": 5940
+      },
+      "paid_CPU_intervals": {
+        "issue": 7604,
+        "response_decision": 8416,
+        "poll": 126592,
+        "decision": 31648,
+        "metadata": 42944,
+        "counter_poll": 33472,
+        "status_poll": 16128,
+        "status_decision": 4032,
+        "delivery": 2048
+      },
+      "run": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/diagnostic32_v1/high_a2_restore",
+      "audit_sha256": "22e1f6310021532ae50c363f0918ffe136845d03a79f4927e7f71e7ff6209fd1",
+      "SRAM": {
+        "active_A1_retention_triggers": 22,
+        "active_query_instances": 34,
+        "genuinely_vulnerable_triggers": 10,
+        "genuinely_vulnerable_query_instances": 10,
+        "auto_B_halves_exercised": [
+          "high",
+          "low"
+        ],
+        "SRAM_write_events": 1030512,
+        "SRAM_snapshot_count": 526
+      },
+      "raw_evidence": {
+        "engine_events.jsonl": {
+          "sha256": "4ffe82174fedd40e4fc8e6e506ff279ec08a6aacee3a4fc96f475424f088ec9d",
+          "compressed_sha256": "3ac369b24312bae31aafe06415f66be8c8772009be08d2a5a457e01488127da4",
+          "bytes": 606804362
+        },
+        "driver_events.jsonl": {
+          "sha256": "364327849471b32da67e714f5100cb313c61044c3796850de6e873e206c69853",
+          "compressed_sha256": "3f1e55344117f19f928868bc8d37d5e89d1fcc47506f049440c032a15f04ef54",
+          "bytes": 4362102
+        },
+        "actual_memory.bin": {
+          "sha256": "e38a64b8b7a6d6ea0135c39bd26653817f0a96bafd2cc52a862489efbadfa81e",
+          "compressed_sha256": "645a8f2b3dc4e563bd4c72353a1d15d37d722c954cb507677cccae83c8c41ad3",
+          "bytes": 16777216
+        }
+      }
+    },
+    {
+      "arm": "high_a2_retain",
+      "mean_final_latency": 115914.4375,
+      "mean_intervals": {
+        "arrival_to_admit": 8504.6875,
+        "admit_to_c1": 93552.0625,
+        "c1_to_consumer": 164.5,
+        "consumer_to_a2": 1037.5,
+        "a2_to_delivery": 12655.6875
+      },
+      "last_delivery": 1862077,
+      "cycles_including_reset": 1862253,
+      "get_bytes": 16572416,
+      "put_ack_bytes": 178176,
+      "rocc_commands": 7128,
+      "cohort_sizes": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "cohorts": 29,
+      "restore_stages": 0,
+      "resume_stages": 22,
+      "restore_query_instances": 0,
+      "retention_query_instances": 34,
+      "stage_counts": {
+        "admit_inputs": 29,
+        "c1_group": 114,
+        "consumer_reload": 29,
+        "consumer_a2": 29,
+        "consumer_l2": 29,
+        "resume_c1_config": 22
+      },
+      "stage_elapsed_cycles": {
+        "admit_inputs": 6290,
+        "c1_group": 1252938,
+        "consumer_reload": 17317,
+        "consumer_a2": 10996,
+        "consumer_l2": 367477,
+        "resume_c1_config": 3894
+      },
+      "paid_CPU_intervals": {
+        "issue": 7128,
+        "response_decision": 8416,
+        "poll": 127936,
+        "decision": 31984,
+        "metadata": 43280,
+        "counter_poll": 33472,
+        "status_poll": 16128,
+        "status_decision": 4032,
+        "delivery": 2048
+      },
+      "run": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/a_retention_v1/diagnostic32_v1/high_a2_retain",
+      "audit_sha256": "0a1a294a09f80855bf7a0841a95193adad4514beef88832183e874379cc96939",
+      "SRAM": {
+        "active_A1_retention_triggers": 22,
+        "active_query_instances": 34,
+        "genuinely_vulnerable_triggers": 10,
+        "genuinely_vulnerable_query_instances": 10,
+        "auto_B_halves_exercised": [
+          "high",
+          "low"
+        ],
+        "SRAM_write_events": 1028608,
+        "SRAM_snapshot_count": 526
+      },
+      "raw_evidence": {
+        "engine_events.jsonl": {
+          "sha256": "60dea30edbe5184c6e665f3f3489f2a66c1c811b4b0b9c59aced23b6083301d4",
+          "compressed_sha256": "d2ecc273a2220e8321d2b1c9b6c0a6c2de54f5e79d12747e3e4fdfabe7ffd2a0",
+          "bytes": 605623590
+        },
+        "driver_events.jsonl": {
+          "sha256": "ea6c7f57020ee02f68fc559647cb90a66a8df91c59e84af130ea2e2a002621eb",
+          "compressed_sha256": "f8d7e20ffa01ca52d572fa414654218e2c8c9378c1ae3913a5e3cc5a9d3bc55d",
+          "bytes": 4192627
+        },
+        "actual_memory.bin": {
+          "sha256": "e38a64b8b7a6d6ea0135c39bd26653817f0a96bafd2cc52a862489efbadfa81e",
+          "compressed_sha256": "22fbc93a6f826c7754628e4c002d626e85bc163787526847e75fa1ce46b380c0",
+          "bytes": 16777216
+        }
+      }
+    },
+    {
+      "arm": "closed_full_j4",
+      "mean_final_latency": 96898,
+      "mean_intervals": {
+        "arrival_to_admit": 28251.0625,
+        "admit_to_c1": 54536,
+        "c1_to_consumer": 173.5,
+        "consumer_to_a2": 1310.5,
+        "a2_to_delivery": 12626.9375
+      },
+      "last_delivery": 1848206,
+      "cycles_including_reset": 1848350,
+      "get_bytes": 22192128,
+      "put_ack_bytes": 159744,
+      "rocc_commands": 6203,
+      "cohort_sizes": [
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "cohorts": 24,
+      "restore_stages": 0,
+      "resume_stages": 0,
+      "restore_query_instances": 0,
+      "retention_query_instances": 0,
+      "stage_counts": {
+        "c1_group": 24,
+        "consumer_reload": 24,
+        "consumer_a2": 24,
+        "consumer_l2": 24
+      },
+      "stage_elapsed_cycles": {
+        "c1_group": 1302624,
+        "consumer_reload": 17112,
+        "consumer_a2": 10336,
+        "consumer_l2": 305369
+      },
+      "paid_CPU_intervals": {
+        "issue": 6203,
+        "response_decision": 2736,
+        "poll": 135104,
+        "decision": 33776,
+        "metadata": 43888,
+        "counter_poll": 10752,
+        "status_poll": 6144,
+        "status_decision": 1536,
+        "delivery": 2048
+      },
+      "run": "/home/Gemguan/work/codex_gemmini_paper_20261103/consumer_gate/closed_full_runtime/diagnostic_full_v1/closed_full_j4_immediate",
+      "audit_sha256": "05547c7f20b7cdc9b24df04da018193be024508f9fee0dffd0bd184175e9f354"
+    }
+  ],
+  "comparisons": {
+    "original_on": {
+      "mean_delta": 298.8125,
+      "relative_delta": 0.0025845338811254503,
+      "queries_better": 23,
+      "queries_equal": 0,
+      "queries_worse": 9
+    },
+    "high_a2_restore": {
+      "mean_delta": -427.84375,
+      "relative_delta": -0.003677457115359717,
+      "queries_better": 29,
+      "queries_equal": 1,
+      "queries_worse": 2
+    },
+    "closed_full_j4": {
+      "mean_delta": 19016.4375,
+      "relative_delta": 0.1962521156267416,
+      "queries_better": 6,
+      "queries_equal": 0,
+      "queries_worse": 26
+    }
+  },
+  "heldout_decision": "stop_this_candidate",
+  "preregistration_sha256": "0b79851f7352100a5180cd6d6322fe84f1116b12ebb6f77c612936fbb4d1f56d",
+  "all_frozen_unchanged": true,
+  "interpretation": "same-high-A2 comparison controls mapping; schedule/cohort changes are part of policy effect, not fixed",
+  "inference_unit": "one fixed 32-request diagnostic; no independent repeats or statistical CI"
+}

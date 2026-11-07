@@ -1,0 +1,32 @@
+{
+  "scope": "two fixed diagnostic32 arms only",
+  "arms": {
+    "high_a2_restore": {
+      "build.py": "b20be3701c94bcf18b71beb9d0a8bec95729480aa91e2d243a041b33c10d4e02",
+      "source/driver.cpp": "a748277cbbdf3784ba2d4e8f1a48721089b5b0a9b58a70723f1888c81cfdaa4a",
+      "source/driver_main.hpp": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586",
+      "source/engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+      "source/engine/verilated_engine.cpp": "81deb1e74f7b55ac2777337d780ea01dd871387da04f5d095ece40c35bd0a97c",
+      "source/engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+      "source/online_main.cpp": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+    },
+    "high_a2_retain": {
+      "build.py": "b20be3701c94bcf18b71beb9d0a8bec95729480aa91e2d243a041b33c10d4e02",
+      "source/driver.cpp": "ca7435f919b682670293057c249f6a48d168689271a14c5352798b299991f0fd",
+      "source/driver_main.hpp": "3d8834a0d0376b9deb7fe4087a08ab5a46784b2e06a68e1ac9c75b9fab022586",
+      "source/engine/common_api.hpp": "14e9dfbfbcaaf949491d4d39989de25cb929ec6dcdfc26726ba6656a72585c13",
+      "source/engine/verilated_engine.cpp": "81deb1e74f7b55ac2777337d780ea01dd871387da04f5d095ece40c35bd0a97c",
+      "source/engine/verilated_engine.hpp": "0a303ded859a10da660d754b288185dbd3f915862a38449440e2ce5a60fca493",
+      "source/online_main.cpp": "b04dd8e5f202df6be3fe6bf38a4ede17722b8599102abc61119f1491f5073126"
+    }
+  },
+  "meta_sha256": "6931160cfd2be23f285e1843c72bc33a28753339ab433503467cc859faf8084d",
+  "preregistration_sha256": "31e73c57b857977b89b226bf68302aaf5c37fae56feeffe6f779037ae10b613b",
+  "checkers": {
+    "audit/check_v2.py": "295dc3d451f56dc8702f4712068afd3b7400e706e90589a0155af103f40b6763",
+    "audit/raw_tl.py": "dedb3b92296a5704ee7fcd5ca8e7d0fdfc530d1baeeb9972a028d231840b480f",
+    "audit/check_retention_v3.py": "bfb2c1922d2ecae138ba52806336742748c7eb6083fe88ec3d2925c6ec7232ac"
+  },
+  "tiny_manifest_sha256": "35ce6b4e265eb791b9a25a628c574b0a4c0cbb607cd96001b3309ab3ddc85f09",
+  "tiny_fault_report_sha256": "bbc120e536fdbd593a45dd0e8586fbbee1a1192ea01695ced36714fbd69dc7ac"
+}

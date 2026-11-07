@@ -1,0 +1,148 @@
+[
+  {
+    "arm": "high_a2_restore",
+    "run_exit": 0,
+    "audit_exit": 0,
+    "SRAM_audit_exit": 0,
+    "all_frozen_unchanged": true,
+    "outputs": {
+      "protocol_audit.stdout.log": {
+        "bytes": 10518,
+        "sha256": "22e1f6310021532ae50c363f0918ffe136845d03a79f4927e7f71e7ff6209fd1"
+      },
+      "query_a2_outputs.bin": {
+        "bytes": 28672,
+        "sha256": "97c48d9b98a622fd4af2f862f97ec12856fbd31ea5cdd68684c8d3ef8c270897"
+      },
+      "result.json": {
+        "bytes": 1555,
+        "sha256": "3515d98897f8dec5c81382eeb04d6bc616957fac3f7ec943ce2537d6c9058c22"
+      },
+      "query_outputs.bin": {
+        "bytes": 114688,
+        "sha256": "b1104d48f701625dd5462e76b395a94decf3520b2e6b4128831da4a19ea6c0fd"
+      },
+      "actual_memory.bin": {
+        "bytes": 16777216,
+        "sha256": "e38a64b8b7a6d6ea0135c39bd26653817f0a96bafd2cc52a862489efbadfa81e"
+      },
+      "SRAM_audit.stdout.log": {
+        "bytes": 13234,
+        "sha256": "72bc17e54950bd9b4a24e226d58b717f7d564a32272dc1fd2fac4ab0814cc13d"
+      },
+      "independent_audit_v2.json": {
+        "bytes": 10518,
+        "sha256": "22e1f6310021532ae50c363f0918ffe136845d03a79f4927e7f71e7ff6209fd1"
+      },
+      "query_results.json": {
+        "bytes": 5594,
+        "sha256": "a8d113374d2dd55dd7d73f400b6c92ab542b12308d0576bd62d3c6f99e0d03ad"
+      },
+      "SRAM_audit.stderr.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "engine_events.jsonl": {
+        "bytes": 606804362,
+        "sha256": "4ffe82174fedd40e4fc8e6e506ff279ec08a6aacee3a4fc96f475424f088ec9d"
+      },
+      "driver_events.jsonl": {
+        "bytes": 4362102,
+        "sha256": "364327849471b32da67e714f5100cb313c61044c3796850de6e873e206c69853"
+      },
+      "query_c2_outputs.bin": {
+        "bytes": 16384,
+        "sha256": "51f964342b8ed31c27dd0ba50d358632f550d2bb0891a05df87320ea5090afca"
+      },
+      "query_times.csv": {
+        "bytes": 819,
+        "sha256": "d2e6638fa0ebc2f5e2ac906834cd3fca985fa6501879620e36040ca2a639cc28"
+      },
+      "independent_retention_audit_v3.json": {
+        "bytes": 13234,
+        "sha256": "72bc17e54950bd9b4a24e226d58b717f7d564a32272dc1fd2fac4ab0814cc13d"
+      },
+      "runtime_config.json": {
+        "bytes": 430,
+        "sha256": "070d958d107089598a27defc91642f932a8f9c865544f78e5cb34539cac84f3b"
+      },
+      "protocol_audit.stderr.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  {
+    "arm": "high_a2_retain",
+    "run_exit": 0,
+    "audit_exit": 0,
+    "SRAM_audit_exit": 0,
+    "all_frozen_unchanged": true,
+    "outputs": {
+      "protocol_audit.stdout.log": {
+        "bytes": 10518,
+        "sha256": "0a1a294a09f80855bf7a0841a95193adad4514beef88832183e874379cc96939"
+      },
+      "query_a2_outputs.bin": {
+        "bytes": 28672,
+        "sha256": "97c48d9b98a622fd4af2f862f97ec12856fbd31ea5cdd68684c8d3ef8c270897"
+      },
+      "result.json": {
+        "bytes": 1555,
+        "sha256": "4dccf8014e654553900f407f42c92ce10084f8e5b575a5df3c625674db0f2ecc"
+      },
+      "query_outputs.bin": {
+        "bytes": 114688,
+        "sha256": "b1104d48f701625dd5462e76b395a94decf3520b2e6b4128831da4a19ea6c0fd"
+      },
+      "actual_memory.bin": {
+        "bytes": 16777216,
+        "sha256": "e38a64b8b7a6d6ea0135c39bd26653817f0a96bafd2cc52a862489efbadfa81e"
+      },
+      "SRAM_audit.stdout.log": {
+        "bytes": 13228,
+        "sha256": "05c579f23e021e194841092feb87eb30f79f9f5a55144765f010fdce8d4f5727"
+      },
+      "independent_audit_v2.json": {
+        "bytes": 10518,
+        "sha256": "0a1a294a09f80855bf7a0841a95193adad4514beef88832183e874379cc96939"
+      },
+      "query_results.json": {
+        "bytes": 5594,
+        "sha256": "dd2651452311ae7d03fa5f7c6ab87ca3e9ba471e2ccd67c70c568282f3961cf8"
+      },
+      "SRAM_audit.stderr.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "engine_events.jsonl": {
+        "bytes": 605623590,
+        "sha256": "60dea30edbe5184c6e665f3f3489f2a66c1c811b4b0b9c59aced23b6083301d4"
+      },
+      "driver_events.jsonl": {
+        "bytes": 4192627,
+        "sha256": "ea6c7f57020ee02f68fc559647cb90a66a8df91c59e84af130ea2e2a002621eb"
+      },
+      "query_c2_outputs.bin": {
+        "bytes": 16384,
+        "sha256": "51f964342b8ed31c27dd0ba50d358632f550d2bb0891a05df87320ea5090afca"
+      },
+      "query_times.csv": {
+        "bytes": 819,
+        "sha256": "dd7a7feed03901b40c202b7c7263adce85daa6ed3d0f434d809f83d1c5eda8ca"
+      },
+      "independent_retention_audit_v3.json": {
+        "bytes": 13228,
+        "sha256": "05c579f23e021e194841092feb87eb30f79f9f5a55144765f010fdce8d4f5727"
+      },
+      "runtime_config.json": {
+        "bytes": 430,
+        "sha256": "070d958d107089598a27defc91642f932a8f9c865544f78e5cb34539cac84f3b"
+      },
+      "protocol_audit.stderr.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  }
+]

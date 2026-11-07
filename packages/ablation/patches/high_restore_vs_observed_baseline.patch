@@ -1,0 +1,11 @@
+--- a/source/driver.cpp
++++ b/source/driver.cpp
+@@ -335,7 +335,7 @@
+   void l2(const std::vector<QueryId>& ids,uint64_t cid) {
+     auto xs=make([&]{gemmini_config_ex(WS,NO_ACTIVATION,0);gemmini_config_st(512);
+       gemmini_extended3_config_ld(896,MVIN_SCALE_IDENTITY,false,0);gemmini_extended3_config_ld(128,MVIN_SCALE_IDENTITY,false,1);gemmini_extended3_config_ld(0,MVIN_SCALE_IDENTITY,false,2);
+-      gemmini_loop_ws(1,8,56,16-ids.size(),0,0,cfg.a2_base,cfg.weight2_base,0,cfg.c2_base,896,128,0,128,false,false,true,false,false,NO_ACTIVATION,1,0,false);});
++      gemmini_loop_ws(1,8,56,16-ids.size(),0,0,cfg.a2_base,cfg.weight2_base,0,cfg.c2_base,896,128,0,128,false,false,true,false,false,NO_ACTIVATION,2,0,false);});
+     log->event(now,"l2_start",{{"cohort",num(cid)},{"queries",nums(ids)},{"rows",num(ids.size())}});
+     stage("consumer_l2",std::move(xs),ids.size()*512,[this,ids]{
+       for(auto id:ids){queries.at(id).c2_notified=now;log->event(now,"c2_notified",{{"query",num(id)}});}

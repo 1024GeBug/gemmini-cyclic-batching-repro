@@ -1,0 +1,130 @@
+{
+  "figure_id": "comparison_v6",
+  "skill": "scientific-figure-suite@0.9.0",
+  "DATA_STATUS": "PROVIDED",
+  "STYLE_STATUS": "ESTIMATED",
+  "REPRODUCIBILITY_STATUS": "CODED",
+  "EXPORT_STATUS": "READY",
+  "INTEGRITY_STATUS": "PASS",
+  "inference_unit": "one_diagnostic_workload",
+  "uncertainty": "no confidence interval or p99 inference",
+  "sources": [
+    {
+      "path": "work/consumer_gate/comparison_v6/summary.json",
+      "sha256": "6266e571262e4be521550dec79aa2b04529ed1f33743b8921ece5428b76cf242",
+      "bytes": 185244
+    },
+    {
+      "path": "work/consumer_gate/comparison_v6/paired_queries.csv",
+      "sha256": "c9d9565eef0d0d09d4184cc31e008591b7d7ee53d0bbe06074bb9264f76c671c",
+      "bytes": 15779
+    },
+    {
+      "path": "work/consumer_gate/comparison_v6/policy_summary.csv",
+      "sha256": "d311ef4aad87e26c2908d75f68f0ff08dd4376acd079de80710301e3705388e7",
+      "bytes": 2481
+    },
+    {
+      "path": "work/consumer_gate/comparison_v6/manifest.json",
+      "sha256": "23a34679452c01a190781156eec71119e4d3becfe046cd505e77970ddcc192ac",
+      "bytes": 26057
+    }
+  ],
+  "files": [
+    {
+      "path": "work/figures/comparison_v6/caption_alttext.md",
+      "sha256": "6f6a1dbe285474f8cf541088c316639a9b82880092a4e1b9b265ea1daa5aac43",
+      "bytes": 1671
+    },
+    {
+      "path": "work/figures/comparison_v6/comparison_v6.pdf",
+      "sha256": "389d49705f31dd14f0ee032b7da0128c09f488a20b235623cc217ab7e6d28890",
+      "bytes": 45085
+    },
+    {
+      "path": "work/figures/comparison_v6/comparison_v6.png",
+      "sha256": "d07f6bc0105e1bc7b30d202913b8c0882e530906de2d150679ce2fc84ed6609d",
+      "bytes": 129054
+    },
+    {
+      "path": "work/figures/comparison_v6/comparison_v6.svg",
+      "sha256": "d95f4091475b1b6c3873aa22014acb4506e60dcefa0bef3c109b72d030bcb90c",
+      "bytes": 31425
+    },
+    {
+      "path": "work/figures/comparison_v6/environment.json",
+      "sha256": "2f8009172e6e883a68f67203ed78d0c70e83b2cd3dc0a57b68265f585e41608f",
+      "bytes": 370
+    },
+    {
+      "path": "work/figures/comparison_v6/figure_spec.md",
+      "sha256": "bcb0e74cc4f5004e7bff1efec4674de29cc4dff0c8aefa3babde015b2263d00c",
+      "bytes": 1492
+    },
+    {
+      "path": "work/figures/comparison_v6/font_audit.json",
+      "sha256": "e99c828f6073a445ed5d9e84743d5110faa5bd00c0e2ef08bd3b9bfd31ff50fc",
+      "bytes": 458
+    },
+    {
+      "path": "work/figures/comparison_v6/layout.json",
+      "sha256": "39739a7c6acb731ca31a768a88bfd707bd6cf561f525a1738e312fba0666ea53",
+      "bytes": 16193
+    },
+    {
+      "path": "work/figures/comparison_v6/make_comparison_v6.py",
+      "sha256": "c7915e87c2d5e7a1107ae8032d218371a2c4f94d2adc22c0252cfd82204b04e1",
+      "bytes": 17442
+    },
+    {
+      "path": "work/figures/comparison_v6/multipanel_audit.json",
+      "sha256": "0ec760b801f98d1a676329ecb0b69b8a2c4e2a9ec641b56e0a13b913b8549082",
+      "bytes": 353
+    },
+    {
+      "path": "work/figures/comparison_v6/pdf_preview.png",
+      "sha256": "bc978b3b0290394d273454c527c2c3d4b198496e33859768217146d51857b7a6",
+      "bytes": 66934
+    },
+    {
+      "path": "work/figures/comparison_v6/plotted_values.json",
+      "sha256": "c455808579e0621e43e3e22df4fd7544dad923bfadf86f8ead3473e503e0b16c",
+      "bytes": 2300
+    },
+    {
+      "path": "work/figures/comparison_v6/quality_report.md",
+      "sha256": "d405d75125bd95383647f913fb30bb0fa26f5a5c95a5744061e692ece639ba34",
+      "bytes": 1500
+    },
+    {
+      "path": "work/figures/comparison_v6/README.md",
+      "sha256": "be5a291983d3f6ce25657d26923c69e1435561c8e41843745037fcece8164f4b",
+      "bytes": 950
+    },
+    {
+      "path": "work/figures/comparison_v6/render_audit.json",
+      "sha256": "1f80bb7c54ea24a439c05773cab183a911309db440731a9f1cf785d67dcf71ab",
+      "bytes": 1568
+    },
+    {
+      "path": "work/figures/comparison_v6/source_verification.json",
+      "sha256": "52ee9553c8eb19b22a5a7e80e2ebf9289d8fb5c1086581f91637deb063a2f6f5",
+      "bytes": 889
+    },
+    {
+      "path": "work/figures/comparison_v6/text_layout_audit.json",
+      "sha256": "f8645ff28bc26b70f81f4098aed8717e9ed1480dc890379c7ad970a544ea85b4",
+      "bytes": 1397
+    },
+    {
+      "path": "work/figures/comparison_v6/visual_audit.json",
+      "sha256": "d37bcffde8a186cda5bb5d45dff073f382e9b77e2564e7d0d716a81dc245c7b3",
+      "bytes": 628
+    },
+    {
+      "path": "work/figures/comparison_v6/visual_claim_ledger.jsonl",
+      "sha256": "ecd8a9b6ea659810a544f2d4ebb64f2a385e5d24768309f12be6f7482414031c",
+      "bytes": 1648
+    }
+  ]
+}

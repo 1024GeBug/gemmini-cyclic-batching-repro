@@ -1,0 +1,17 @@
+{
+  "verilator_source_url": "https://codeload.github.com/verilator/verilator/tar.gz/refs/tags/v5.022",
+  "verilator_source_archive_sha256": "3c2f5338f4b6ce7e2f47a142401acdd18cbf4c5da06092618d6d036c0afef12d",
+  "verilator_version": "Verilator 5.022 2024-02-24 rev UNKNOWN.REV",
+  "native_gxx_version": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "isolated_build_environment": {
+    "PATH": "/mnt/c/Users/JiapengGuan/Documents/Codex/2026-11-03/https-mp-weixin-qq-com-s/work/release_repro/.validation/toolchain/prefix/bin:/usr/bin:/bin",
+    "LANG": "C.UTF-8",
+    "JOBS": "4"
+  },
+  "environment_started_empty": true,
+  "chipyard_used_for_portable_compilation": false,
+  "historical_objects_or_binaries_reused": false,
+  "toolchain_built_locally_from_upstream_source": true,
+  "package_manager_changes": "none; flex/bison/libfl-dev debs downloaded and extracted inside .validation only",
+  "system_libraries": "\tlinux-vdso.so.1 (0x00007ffd05956000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007c2f1c50d000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007c2f1c200000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007c2f1d56a000)\n"
+}

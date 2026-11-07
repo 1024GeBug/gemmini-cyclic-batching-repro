@@ -1,0 +1,118 @@
+{
+  "status": "pass",
+  "mode": "baseline",
+  "active_A1_retention_triggers": 3,
+  "genuinely_vulnerable_triggers": 2,
+  "genuinely_vulnerable_query_instances": 2,
+  "active_query_instances": 5,
+  "consumer_records": [
+    {
+      "stage": 13,
+      "cycle": 79845,
+      "live_queries": [
+        1,
+        2
+      ],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [
+        1,
+        2
+      ],
+      "slot_generations": [
+        1,
+        1
+      ],
+      "start_panels": [
+        2,
+        12
+      ],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [
+        1,
+        2
+      ],
+      "later_C1_groups": 6,
+      "cross_scan_queries": [
+        1,
+        2
+      ]
+    },
+    {
+      "stage": 19,
+      "cycle": 106262,
+      "live_queries": [
+        2,
+        3
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        3
+      ],
+      "slots": [
+        2,
+        0
+      ],
+      "slot_generations": [
+        1,
+        2
+      ],
+      "start_panels": [
+        12,
+        14
+      ],
+      "rows_written_in_live_A1": 56,
+      "exact_A1_after": [
+        2
+      ],
+      "later_C1_groups": 6,
+      "cross_scan_queries": [
+        2
+      ]
+    },
+    {
+      "stage": 28,
+      "cycle": 175135,
+      "live_queries": [
+        3
+      ],
+      "would_be_overwritten_by_packed_id1": [
+        3
+      ],
+      "slots": [
+        0
+      ],
+      "slot_generations": [
+        2
+      ],
+      "start_panels": [
+        14
+      ],
+      "rows_written_in_live_A1": 56,
+      "exact_A1_after": [],
+      "later_C1_groups": 1,
+      "cross_scan_queries": []
+    },
+    {
+      "stage": 33,
+      "cycle": 201232,
+      "live_queries": [],
+      "would_be_overwritten_by_packed_id1": [],
+      "slots": [],
+      "slot_generations": [],
+      "start_panels": [],
+      "rows_written_in_live_A1": 0,
+      "exact_A1_after": [],
+      "later_C1_groups": 0,
+      "cross_scan_queries": []
+    }
+  ],
+  "auto_B_halves_exercised": [
+    "high",
+    "low"
+  ],
+  "SRAM_write_events": 129752,
+  "SRAM_snapshot_count": 68,
+  "resume_config_stages": 0,
+  "restore_input_stages": 3,
+  "slot_reuse": true,
+  "checker_sha256": "3760c681d57870225293df5c0feee74f00574a1d5360a6dd65c908493c73db85"
+}
